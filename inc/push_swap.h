@@ -34,6 +34,14 @@ typedef struct	s_game
 
 void			ft_error(void);
 t_stack			*reader(int ac, char **av);
+t_stack			*new_stack(int value);
 int				is_valid(t_stack *stack, char *str);
+
+void			swap(t_stack *stack);
+void			push(t_stack **stack_from, t_stack **stack_to);
+void			rotate(t_stack **stack);
+void			reverse_rotate(t_stack **stack);
+
+void			del_stack_head(t_stack **stack);
 
 #endif

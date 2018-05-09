@@ -12,7 +12,7 @@
 
 #include "../inc/push_swap.h"
 
-static t_stack	*new_stack(int value)
+t_stack			*new_stack(int value)
 {
 	t_stack *stack;
 
@@ -24,7 +24,7 @@ static t_stack	*new_stack(int value)
 	return (stack);
 }
 
-static	void	push_stack(t_stack **stack, int value)
+static	void	add_stack(t_stack **stack, int value)
 {
 	t_stack *tmp;
 	t_stack *buf;
@@ -58,7 +58,7 @@ t_stack			*reader(int ac, char **av)
 		while (arr[j])
 		{
 			if (is_valid(a, arr[j]))
-				push_stack(&a, ft_atoi(arr[j]));
+				add_stack(&a, ft_atoi(arr[j]));
 			else
 				ft_error();
 			j++;

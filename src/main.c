@@ -32,18 +32,68 @@ static t_game	*create_game(void)
 int main(int ac, char **av)
 {
 	t_game	*game;
-	t_stack	*tmp;
+	t_stack	*tmp1;
+	t_stack	*tmp2;
 
 	if (ac > 1)
 	{
 		game = create_game();
 		game->a = reader(ac, av);
-		tmp = game->a;
-		while (tmp)
+		tmp1 = game->a;
+		while (tmp1)
 		{
-			ft_printf("%d ", tmp->value);
-			tmp = tmp->next;
+			ft_printf("%d ", tmp1->value);
+			tmp1 = tmp1->next;
 		}
+		ft_printf("\n");
+		swap(game->a);
+		tmp1 = game->a;
+		while (tmp1)
+		{
+			ft_printf("%d ", tmp1->value);
+			tmp1 = tmp1->next;
+		}
+		ft_printf("\n");
+		swap(game->a);
+		tmp1 = game->a;
+		while (tmp1)
+		{
+			ft_printf("%d ", tmp1->value);
+			tmp1 = tmp1->next;
+		}
+		ft_printf("\n");
+		push(&game->a, &game->b);
+		push(&game->a, &game->b);
+		push(&game->a, &game->b);
+		push(&game->a, &game->b);
+		tmp1 = game->a;
+		while (tmp1->next)
+		{
+			ft_printf("%d ", tmp1->value);
+			tmp1 = tmp1->next;
+		}
+		ft_printf("%d ", tmp1->value);
+		ft_printf("\n");
+		while (tmp1)
+		{
+			ft_printf("%d ", tmp1->value);
+			tmp1 = tmp1->prev;
+		}
+		ft_printf("\n");
+		tmp2 = game->b;
+		while (tmp2->next)
+		{
+			ft_printf("%d ", tmp2->value);
+			tmp2 = tmp2->next;
+		}
+		ft_printf("%d ", tmp2->value);
+		ft_printf("\n");
+		while (tmp2)
+		{
+			ft_printf("%d ", tmp2->value);
+			tmp2 = tmp2->prev;
+		}
+		ft_printf("\n");
 	}
 	else
 		ft_error();

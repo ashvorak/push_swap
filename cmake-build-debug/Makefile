@@ -2499,6 +2499,33 @@ lib/get_next_line/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/lib/get_next_line/get_next_line.c.s
 .PHONY : lib/get_next_line/get_next_line.c.s
 
+src/handle_stack.o: src/handle_stack.c.o
+
+.PHONY : src/handle_stack.o
+
+# target to build an object file
+src/handle_stack.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/handle_stack.c.o
+.PHONY : src/handle_stack.c.o
+
+src/handle_stack.i: src/handle_stack.c.i
+
+.PHONY : src/handle_stack.i
+
+# target to preprocess a source file
+src/handle_stack.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/handle_stack.c.i
+.PHONY : src/handle_stack.c.i
+
+src/handle_stack.s: src/handle_stack.c.s
+
+.PHONY : src/handle_stack.s
+
+# target to generate assembly for a file
+src/handle_stack.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/handle_stack.c.s
+.PHONY : src/handle_stack.c.s
+
 src/is_valid.o: src/is_valid.c.o
 
 .PHONY : src/is_valid.o
@@ -2552,6 +2579,33 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/main.c.s
 .PHONY : src/main.c.s
+
+src/operations.o: src/operations.c.o
+
+.PHONY : src/operations.o
+
+# target to build an object file
+src/operations.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/operations.c.o
+.PHONY : src/operations.c.o
+
+src/operations.i: src/operations.c.i
+
+.PHONY : src/operations.i
+
+# target to preprocess a source file
+src/operations.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/operations.c.i
+.PHONY : src/operations.c.i
+
+src/operations.s: src/operations.c.s
+
+.PHONY : src/operations.s
+
+# target to generate assembly for a file
+src/operations.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/operations.c.s
+.PHONY : src/operations.c.s
 
 src/reader.o: src/reader.c.o
 
@@ -2853,12 +2907,18 @@ help:
 	@echo "... lib/get_next_line/get_next_line.o"
 	@echo "... lib/get_next_line/get_next_line.i"
 	@echo "... lib/get_next_line/get_next_line.s"
+	@echo "... src/handle_stack.o"
+	@echo "... src/handle_stack.i"
+	@echo "... src/handle_stack.s"
 	@echo "... src/is_valid.o"
 	@echo "... src/is_valid.i"
 	@echo "... src/is_valid.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/operations.o"
+	@echo "... src/operations.i"
+	@echo "... src/operations.s"
 	@echo "... src/reader.o"
 	@echo "... src/reader.i"
 	@echo "... src/reader.s"
