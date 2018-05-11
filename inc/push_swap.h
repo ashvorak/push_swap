@@ -26,10 +26,17 @@ typedef	struct	s_stack
 	struct s_stack	*next;
 }				t_stack;
 
+typedef	struct	s_block
+{
+	int		size;
+	struct s_block *next;
+}				t_block;
+
 typedef struct	s_game
 {
 	t_stack	*a;
 	t_stack	*b;
+	struct s_block *block;
 }				t_game;
 
 void			ft_error(void);

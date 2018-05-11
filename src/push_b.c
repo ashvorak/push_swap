@@ -53,43 +53,59 @@ static int	ret_base(t_stack *stack, int size)
 		tmp = tmp->next;
 	}
 	sort_arr(&arr[0], size);
-	i = 0;
-	while (i < size)
-	{
-		ft_printf("%d ", arr[i]);
-		i++;
-	}
-	ft_printf("\n");
-	ft_printf("arr[size/2] %d\n", arr[ size / 2]);
 	return (arr[size / 2]);
+}
+
+t_block *new_block(int size)
+{
+	t_block *block;
+
+	if (!(block = (t_block*)malloc(sizeof(t_block))))
+		return (NULL);
+	block->size = size;
+	block->next = NULL;
+	return (block);
+}
+
+void		push_block(t_game *game, int count)
+{
+	t_block	*tmp;
+
+	if (game->block)
+	{
+		tmp = new_block(count);
+		tmp->next = game->block;
+		game->block = tmp;
+	}
+	else
+		game->block = new_block(count);
 }
 
 void		push_b(t_game *game)
 {
-	int 	i;
-	int		size;
-	int		base;
-	t_stack	*tmp;
+	int				i;
+	int				size;
+	int				base;
+	int 			count;
 
 	size = stack_size(game->a);
 	while (size > 3)
 	{
-		tmp = game->a;
 		base = ret_base(game->a, size);
 		i = 0;
+		count = 0;
 		while (i < size)
 		{
-			if (tmp->value < base)
+			if (game->a->value < base)
+			{
 				push(&game->a, &game->b);
+				count++;
+			}
 			else
 				rotate(&game->a);
-			ft_printf("stack a : ");
-			print_stack(game->a);
-			ft_printf("stack b : ");
-			print_stack(game->b);
 			i++;
-			tmp = game->a;
 		}
+		push_block(game, count);
 		size = stack_size(game->a);
 	}
 }
