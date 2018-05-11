@@ -2289,6 +2289,54 @@ CMakeFiles/push_swap.dir/src/handle_stack.c.o.provides: CMakeFiles/push_swap.dir
 CMakeFiles/push_swap.dir/src/handle_stack.c.o.provides.build: CMakeFiles/push_swap.dir/src/handle_stack.c.o
 
 
+CMakeFiles/push_swap.dir/src/sort.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/src/sort.c.o: ../src/sort.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/push_swap.dir/src/sort.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/sort.c.o   -c /Users/oshvorak/push_swap/src/sort.c
+
+CMakeFiles/push_swap.dir/src/sort.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/src/sort.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/push_swap/src/sort.c > CMakeFiles/push_swap.dir/src/sort.c.i
+
+CMakeFiles/push_swap.dir/src/sort.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/sort.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/push_swap/src/sort.c -o CMakeFiles/push_swap.dir/src/sort.c.s
+
+CMakeFiles/push_swap.dir/src/sort.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/src/sort.c.o.requires
+
+CMakeFiles/push_swap.dir/src/sort.c.o.provides: CMakeFiles/push_swap.dir/src/sort.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/sort.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/src/sort.c.o.provides
+
+CMakeFiles/push_swap.dir/src/sort.c.o.provides.build: CMakeFiles/push_swap.dir/src/sort.c.o
+
+
+CMakeFiles/push_swap.dir/src/push_b.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/src/push_b.c.o: ../src/push_b.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/push_swap.dir/src/push_b.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/push_b.c.o   -c /Users/oshvorak/push_swap/src/push_b.c
+
+CMakeFiles/push_swap.dir/src/push_b.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/src/push_b.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/push_swap/src/push_b.c > CMakeFiles/push_swap.dir/src/push_b.c.i
+
+CMakeFiles/push_swap.dir/src/push_b.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/push_b.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/push_swap/src/push_b.c -o CMakeFiles/push_swap.dir/src/push_b.c.s
+
+CMakeFiles/push_swap.dir/src/push_b.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/src/push_b.c.o.requires
+
+CMakeFiles/push_swap.dir/src/push_b.c.o.provides: CMakeFiles/push_swap.dir/src/push_b.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_b.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/src/push_b.c.o.provides
+
+CMakeFiles/push_swap.dir/src/push_b.c.o.provides.build: CMakeFiles/push_swap.dir/src/push_b.c.o
+
+
 # Object files for target push_swap
 push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/lib/ft_printf/src/active_bits.c.o" \
@@ -2383,7 +2431,9 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/src/reader.c.o" \
 "CMakeFiles/push_swap.dir/src/is_valid.c.o" \
 "CMakeFiles/push_swap.dir/src/operations.c.o" \
-"CMakeFiles/push_swap.dir/src/handle_stack.c.o"
+"CMakeFiles/push_swap.dir/src/handle_stack.c.o" \
+"CMakeFiles/push_swap.dir/src/sort.c.o" \
+"CMakeFiles/push_swap.dir/src/push_b.c.o"
 
 # External object files for target push_swap
 push_swap_EXTERNAL_OBJECTS =
@@ -2481,9 +2531,11 @@ push_swap: CMakeFiles/push_swap.dir/src/reader.c.o
 push_swap: CMakeFiles/push_swap.dir/src/is_valid.c.o
 push_swap: CMakeFiles/push_swap.dir/src/operations.c.o
 push_swap: CMakeFiles/push_swap.dir/src/handle_stack.c.o
+push_swap: CMakeFiles/push_swap.dir/src/sort.c.o
+push_swap: CMakeFiles/push_swap.dir/src/push_b.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: CMakeFiles/push_swap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Linking C executable push_swap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Linking C executable push_swap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2584,6 +2636,8 @@ CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/reader.c.o.requi
 CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/is_valid.c.o.requires
 CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/operations.c.o.requires
 CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/handle_stack.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/sort.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/push_b.c.o.requires
 
 .PHONY : CMakeFiles/push_swap.dir/requires
 

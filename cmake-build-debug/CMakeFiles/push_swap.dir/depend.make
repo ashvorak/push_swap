@@ -296,9 +296,21 @@ CMakeFiles/push_swap.dir/src/operations.c.o: ../lib/get_next_line/get_next_line.
 CMakeFiles/push_swap.dir/src/operations.c.o: ../lib/libft.h
 CMakeFiles/push_swap.dir/src/operations.c.o: ../src/operations.c
 
+CMakeFiles/push_swap.dir/src/push_b.c.o: ../inc/push_swap.h
+CMakeFiles/push_swap.dir/src/push_b.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/push_swap.dir/src/push_b.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/push_swap.dir/src/push_b.c.o: ../lib/libft.h
+CMakeFiles/push_swap.dir/src/push_b.c.o: ../src/push_b.c
+
 CMakeFiles/push_swap.dir/src/reader.c.o: ../inc/push_swap.h
 CMakeFiles/push_swap.dir/src/reader.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/push_swap.dir/src/reader.c.o: ../lib/get_next_line/get_next_line.h
 CMakeFiles/push_swap.dir/src/reader.c.o: ../lib/libft.h
 CMakeFiles/push_swap.dir/src/reader.c.o: ../src/reader.c
+
+CMakeFiles/push_swap.dir/src/sort.c.o: ../inc/push_swap.h
+CMakeFiles/push_swap.dir/src/sort.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/push_swap.dir/src/sort.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/push_swap.dir/src/sort.c.o: ../lib/libft.h
+CMakeFiles/push_swap.dir/src/sort.c.o: ../src/sort.c
 

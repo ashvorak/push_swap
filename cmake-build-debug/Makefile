@@ -2607,6 +2607,33 @@ src/operations.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/operations.c.s
 .PHONY : src/operations.c.s
 
+src/push_b.o: src/push_b.c.o
+
+.PHONY : src/push_b.o
+
+# target to build an object file
+src/push_b.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_b.c.o
+.PHONY : src/push_b.c.o
+
+src/push_b.i: src/push_b.c.i
+
+.PHONY : src/push_b.i
+
+# target to preprocess a source file
+src/push_b.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_b.c.i
+.PHONY : src/push_b.c.i
+
+src/push_b.s: src/push_b.c.s
+
+.PHONY : src/push_b.s
+
+# target to generate assembly for a file
+src/push_b.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_b.c.s
+.PHONY : src/push_b.c.s
+
 src/reader.o: src/reader.c.o
 
 .PHONY : src/reader.o
@@ -2633,6 +2660,33 @@ src/reader.s: src/reader.c.s
 src/reader.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/reader.c.s
 .PHONY : src/reader.c.s
+
+src/sort.o: src/sort.c.o
+
+.PHONY : src/sort.o
+
+# target to build an object file
+src/sort.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/sort.c.o
+.PHONY : src/sort.c.o
+
+src/sort.i: src/sort.c.i
+
+.PHONY : src/sort.i
+
+# target to preprocess a source file
+src/sort.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/sort.c.i
+.PHONY : src/sort.c.i
+
+src/sort.s: src/sort.c.s
+
+.PHONY : src/sort.s
+
+# target to generate assembly for a file
+src/sort.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/sort.c.s
+.PHONY : src/sort.c.s
 
 # Help Target
 help:
@@ -2919,9 +2973,15 @@ help:
 	@echo "... src/operations.o"
 	@echo "... src/operations.i"
 	@echo "... src/operations.s"
+	@echo "... src/push_b.o"
+	@echo "... src/push_b.i"
+	@echo "... src/push_b.s"
 	@echo "... src/reader.o"
 	@echo "... src/reader.i"
 	@echo "... src/reader.s"
+	@echo "... src/sort.o"
+	@echo "... src/sort.i"
+	@echo "... src/sort.s"
 .PHONY : help
 
 

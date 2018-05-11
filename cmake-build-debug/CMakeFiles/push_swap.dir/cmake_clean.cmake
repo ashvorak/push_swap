@@ -92,6 +92,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/push_swap.dir/src/is_valid.c.o"
   "CMakeFiles/push_swap.dir/src/operations.c.o"
   "CMakeFiles/push_swap.dir/src/handle_stack.c.o"
+  "CMakeFiles/push_swap.dir/src/sort.c.o"
+  "CMakeFiles/push_swap.dir/src/push_b.c.o"
   "push_swap.pdb"
   "push_swap"
 )

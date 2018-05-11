@@ -17,17 +17,20 @@ void	push(t_stack **stack_from, t_stack **stack_to)
 	int		buf;
 	t_stack	*tmp;
 
-	buf = (*stack_from)->value;
-	del_stack_head(&*stack_from);
-	if (*stack_to)
+	if (*stack_from)
 	{
-		tmp = new_stack(buf);
-		tmp->next = *stack_to;
-		(*stack_to)->prev = tmp;
-		*stack_to = tmp;
+		buf = (*stack_from)->value;
+		del_stack_head(&*stack_from);
+		if (*stack_to)
+		{
+			tmp = new_stack(buf);
+			tmp->next = *stack_to;
+			(*stack_to)->prev = tmp;
+			*stack_to = tmp;
+		}
+		else
+			*stack_to = new_stack(buf);
 	}
-	else
-		*stack_to = new_stack(buf);
 }
 
 void	rotate(t_stack **stack)

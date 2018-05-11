@@ -44,4 +44,9 @@ void			reverse_rotate(t_stack **stack);
 
 void			del_stack_head(t_stack **stack);
 
+void			sort(t_game *game);
+void			push_b(t_game *game);
+
+void			print_stack(t_stack *stack);
+
 #endif

@@ -386,7 +386,15 @@ string.h
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h
 
+/Users/oshvorak/push_swap/src/push_b.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
 /Users/oshvorak/push_swap/src/reader.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
+/Users/oshvorak/push_swap/src/sort.c
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h
 

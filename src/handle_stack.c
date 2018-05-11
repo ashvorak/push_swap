@@ -7,8 +7,8 @@ void	del_stack_head(t_stack **stack)
 	if (*stack)
 	{
 		tmp = *stack;
+		(*stack)->next->prev = NULL;
 		*stack = (*stack)->next;
-		(*stack)->prev = NULL;
 		free(tmp);
 	}
 }

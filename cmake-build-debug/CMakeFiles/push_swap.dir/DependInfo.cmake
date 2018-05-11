@@ -96,7 +96,9 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/oshvorak/push_swap/src/is_valid.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_valid.c.o"
   "/Users/oshvorak/push_swap/src/main.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/main.c.o"
   "/Users/oshvorak/push_swap/src/operations.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/operations.c.o"
+  "/Users/oshvorak/push_swap/src/push_b.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/push_b.c.o"
   "/Users/oshvorak/push_swap/src/reader.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/reader.c.o"
+  "/Users/oshvorak/push_swap/src/sort.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/sort.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
