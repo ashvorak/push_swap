@@ -36,7 +36,10 @@ typedef struct	s_game
 {
 	t_stack	*a;
 	t_stack	*b;
-	struct s_block *block;
+	int	a_remain;
+	int	b_remain;
+	int	b_bottom;
+	t_block *block;
 }				t_game;
 
 void			ft_error(void);
@@ -50,9 +53,17 @@ void			rotate(t_stack **stack);
 void			reverse_rotate(t_stack **stack);
 
 void			del_stack_head(t_stack **stack);
+void			del_block_head(t_block **block);
 
 void			sort(t_game *game);
+
 void			push_b(t_game *game);
+
+int				stack_size(t_stack *stack);
+void			sort_arr(int *arr, int size);
+int				return_base(t_stack *stack, int size);
+t_block			*new_block(int size);
+void			push_block(t_game *game, int count);
 
 void			print_stack(t_stack *stack);
 

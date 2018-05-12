@@ -97,4 +97,4 @@ add_executable(push_swap
         lib/ft_toupper.c
         lib/libft.h
         src/main.c
-        src/reader.c src/is_valid.c src/operations.c src/handle_stack.c src/sort.c src/push_b.c)
+        src/reader.c src/is_valid.c src/operations.c src/process_struct.c src/sort.c src/push_b.c)

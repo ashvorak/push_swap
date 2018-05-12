@@ -26,6 +26,9 @@ static t_game	*create_game(void)
 		return (NULL);
 	game->a = NULL;
 	game->b = NULL;
+	game->a_remain = 0;
+	game->b_remain = 0;
+	game->b_bottom = 0;
 	game->block = NULL;
 	return (game);
 }
@@ -52,6 +55,7 @@ int main(int ac, char **av)
 	{
 		game = create_game();
 		game->a = reader(ac, av);
+		push_b(game);
 		sort(game);
 		ft_printf("stack a : ");
 		print_stack(game->a);

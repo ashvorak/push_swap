@@ -2499,33 +2499,6 @@ lib/get_next_line/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/lib/get_next_line/get_next_line.c.s
 .PHONY : lib/get_next_line/get_next_line.c.s
 
-src/handle_stack.o: src/handle_stack.c.o
-
-.PHONY : src/handle_stack.o
-
-# target to build an object file
-src/handle_stack.c.o:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/handle_stack.c.o
-.PHONY : src/handle_stack.c.o
-
-src/handle_stack.i: src/handle_stack.c.i
-
-.PHONY : src/handle_stack.i
-
-# target to preprocess a source file
-src/handle_stack.c.i:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/handle_stack.c.i
-.PHONY : src/handle_stack.c.i
-
-src/handle_stack.s: src/handle_stack.c.s
-
-.PHONY : src/handle_stack.s
-
-# target to generate assembly for a file
-src/handle_stack.c.s:
-	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/handle_stack.c.s
-.PHONY : src/handle_stack.c.s
-
 src/is_valid.o: src/is_valid.c.o
 
 .PHONY : src/is_valid.o
@@ -2606,6 +2579,33 @@ src/operations.s: src/operations.c.s
 src/operations.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/operations.c.s
 .PHONY : src/operations.c.s
+
+src/process_struct.o: src/process_struct.c.o
+
+.PHONY : src/process_struct.o
+
+# target to build an object file
+src/process_struct.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/process_struct.c.o
+.PHONY : src/process_struct.c.o
+
+src/process_struct.i: src/process_struct.c.i
+
+.PHONY : src/process_struct.i
+
+# target to preprocess a source file
+src/process_struct.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/process_struct.c.i
+.PHONY : src/process_struct.c.i
+
+src/process_struct.s: src/process_struct.c.s
+
+.PHONY : src/process_struct.s
+
+# target to generate assembly for a file
+src/process_struct.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/process_struct.c.s
+.PHONY : src/process_struct.c.s
 
 src/push_b.o: src/push_b.c.o
 
@@ -2961,9 +2961,6 @@ help:
 	@echo "... lib/get_next_line/get_next_line.o"
 	@echo "... lib/get_next_line/get_next_line.i"
 	@echo "... lib/get_next_line/get_next_line.s"
-	@echo "... src/handle_stack.o"
-	@echo "... src/handle_stack.i"
-	@echo "... src/handle_stack.s"
 	@echo "... src/is_valid.o"
 	@echo "... src/is_valid.i"
 	@echo "... src/is_valid.s"
@@ -2973,6 +2970,9 @@ help:
 	@echo "... src/operations.o"
 	@echo "... src/operations.i"
 	@echo "... src/operations.s"
+	@echo "... src/process_struct.o"
+	@echo "... src/process_struct.i"
+	@echo "... src/process_struct.s"
 	@echo "... src/push_b.o"
 	@echo "... src/push_b.i"
 	@echo "... src/push_b.s"

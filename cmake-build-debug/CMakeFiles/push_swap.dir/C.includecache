@@ -370,10 +370,6 @@ stdlib.h
 string.h
 -
 
-/Users/oshvorak/push_swap/src/handle_stack.c
-../inc/push_swap.h
-/Users/oshvorak/push_swap/inc/push_swap.h
-
 /Users/oshvorak/push_swap/src/is_valid.c
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h
@@ -383,6 +379,10 @@ string.h
 /Users/oshvorak/push_swap/inc/push_swap.h
 
 /Users/oshvorak/push_swap/src/operations.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
+/Users/oshvorak/push_swap/src/process_struct.c
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h
 

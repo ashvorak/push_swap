@@ -356,9 +356,6 @@
 		<Unit filename="/Users/oshvorak/push_swap/lib/libft.h">
 			<Option target="push_swap"/>
 		</Unit>
-		<Unit filename="/Users/oshvorak/push_swap/src/handle_stack.c">
-			<Option target="push_swap"/>
-		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/is_valid.c">
 			<Option target="push_swap"/>
 		</Unit>
@@ -366,6 +363,9 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/operations.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/process_struct.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/push_b.c">

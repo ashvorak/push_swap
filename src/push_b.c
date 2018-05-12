@@ -1,6 +1,6 @@
 #include "../inc/push_swap.h"
 
-static int	stack_size(t_stack *stack)
+int	stack_size(t_stack *stack)
 {
 	int size;
 	t_stack *tmp;
@@ -15,7 +15,7 @@ static int	stack_size(t_stack *stack)
 	return (size);
 }
 
-static void	sort_arr(int *arr, int size)
+void	sort_arr(int *arr, int size)
 {
 	int i;
 	int j;
@@ -39,7 +39,7 @@ static void	sort_arr(int *arr, int size)
 	}
 }
 
-static int	ret_base(t_stack *stack, int size)
+int	return_base(t_stack *stack, int size)
 {
 	int 	i;
 	int		arr[size];
@@ -47,7 +47,7 @@ static int	ret_base(t_stack *stack, int size)
 
 	i = 0;
 	tmp = stack;
-	while (tmp)
+	while (i < size)
 	{
 		arr[i++] = tmp->value;
 		tmp = tmp->next;
@@ -91,12 +91,12 @@ void		push_b(t_game *game)
 	size = stack_size(game->a);
 	while (size > 3)
 	{
-		base = ret_base(game->a, size);
+		base = return_base(game->a, size);
 		i = 0;
 		count = 0;
 		while (i < size)
 		{
-			if (game->a->value < base)
+			if (game->a->value <= base)
 			{
 				push(&game->a, &game->b);
 				count++;
