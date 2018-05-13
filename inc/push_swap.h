@@ -37,6 +37,7 @@ typedef struct	s_game
 	t_stack	*a;
 	t_stack	*b;
 	int	a_remain;
+	int a_bottom;
 	int	b_remain;
 	int	b_bottom;
 	t_block *block;

@@ -6,127 +6,127 @@
 
 #IncludeRegexTransform: 
 
-/Users/oshvorak/push_swap/inc/push_swap.h
+/Users/aleksej/Documents/UNIT/push_swap/inc/push_swap.h
 fcntl.h
 -
 stdlib.h
 -
 ../lib/libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 ../lib/get_next_line/get_next_line.h
-/Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/get_next_line/get_next_line.h
 ../lib/ft_printf/inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_array_size.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_array_size.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_atoi.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_atoi.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_atoi_base.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_atoi_base.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_bzero.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_bzero.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_charreplace.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_charreplace.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_factorial.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_factorial.c
 
-/Users/oshvorak/push_swap/lib/ft_free_arr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_free_arr.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_free_arr_int.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_free_arr_int.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_isalnum.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_isalnum.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_isalpha.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_isalpha.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_isascii.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_isascii.c
 
-/Users/oshvorak/push_swap/lib/ft_isdigit.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_isdigit.c
 
-/Users/oshvorak/push_swap/lib/ft_isprint.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_isprint.c
 
-/Users/oshvorak/push_swap/lib/ft_itoa.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_itoa.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_listsize.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_listsize.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_lstadd.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_lstadd.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_lstdel.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_lstdel.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_lstdelone.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_lstdelone.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_lstiter.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_lstiter.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_lstmap.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_lstmap.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_lstnew.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_lstnew.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_memalloc.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_memalloc.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_memccpy.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_memccpy.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_memchr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_memchr.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_memcmp.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_memcmp.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_memcpy.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_memcpy.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_memdel.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_memdel.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_memmove.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_memmove.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_memset.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_memset.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 stdarg.h
 -
 stdlib.h
@@ -134,235 +134,235 @@ stdlib.h
 wchar.h
 -
 ../../libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/active_bits.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/active_bits.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/convert_base.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/convert_base.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/convert_float.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/convert_float.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/convert_int.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/convert_int.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/ft_printf.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/ft_printf.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/ft_putwchar.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/ft_putwchar.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/ft_realloc.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/ft_realloc.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/handle_char.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/handle_char.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/handle_float.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/handle_float.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/handle_n.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/handle_n.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/handle_num.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/handle_num.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/handle_qualifier.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/handle_qualifier.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/handle_str.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/handle_str.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/handle_value.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/handle_value.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/handle_wchar.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/handle_wchar.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/handle_wstr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/handle_wstr.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/is_type.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/is_type.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/make_colors.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/make_colors.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_printf/src/size_char.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/src/size_char.c
 ../inc/ft_printf.h
-/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_printf/inc/ft_printf.h
 
-/Users/oshvorak/push_swap/lib/ft_putchar.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_putchar.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_putchar_fd.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_putchar_fd.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_putendl.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_putendl.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_putendl_fd.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_putendl_fd.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_putnbr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_putnbr.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_putnbr_fd.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_putnbr_fd.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_putstr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_putstr.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_putstr_fd.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_putstr_fd.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_sqrt.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_sqrt.c
 
-/Users/oshvorak/push_swap/lib/ft_strcapitalize.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strcapitalize.c
 
-/Users/oshvorak/push_swap/lib/ft_strcat.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strcat.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strchr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strchr.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strclr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strclr.c
 
-/Users/oshvorak/push_swap/lib/ft_strcmp.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strcmp.c
 
-/Users/oshvorak/push_swap/lib/ft_strcpy.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strcpy.c
 
-/Users/oshvorak/push_swap/lib/ft_strdel.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strdel.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strdup.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strdup.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strequ.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strequ.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_striter.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_striter.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_striteri.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_striteri.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strjoin.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strjoin.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strlcat.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strlcat.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strlen.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strlen.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strmap.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strmap.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strmapi.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strmapi.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strncat.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strncat.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strncmp.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strncmp.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strncpy.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strncpy.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strnequ.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strnequ.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strnew.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strnew.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strnstr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strnstr.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strrchr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strrchr.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strsplit.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strsplit.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strstr.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strstr.c
 
-/Users/oshvorak/push_swap/lib/ft_strsub.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strsub.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_strtrim.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_strtrim.c
 libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/ft_swap.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_swap.c
 
-/Users/oshvorak/push_swap/lib/ft_tolower.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_tolower.c
 
-/Users/oshvorak/push_swap/lib/ft_toupper.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/ft_toupper.c
 
-/Users/oshvorak/push_swap/lib/get_next_line/get_next_line.c
+/Users/aleksej/Documents/UNIT/push_swap/lib/get_next_line/get_next_line.c
 get_next_line.h
-/Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/get_next_line/get_next_line.h
 
-/Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/get_next_line/get_next_line.h
 fcntl.h
 -
 stdlib.h
 -
 ../libft.h
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 
-/Users/oshvorak/push_swap/lib/libft.h
+/Users/aleksej/Documents/UNIT/push_swap/lib/libft.h
 unistd.h
 -
 stdlib.h
@@ -370,31 +370,31 @@ stdlib.h
 string.h
 -
 
-/Users/oshvorak/push_swap/src/is_valid.c
+/Users/aleksej/Documents/UNIT/push_swap/src/is_valid.c
 ../inc/push_swap.h
-/Users/oshvorak/push_swap/inc/push_swap.h
+/Users/aleksej/Documents/UNIT/push_swap/inc/push_swap.h
 
-/Users/oshvorak/push_swap/src/main.c
+/Users/aleksej/Documents/UNIT/push_swap/src/main.c
 ../inc/push_swap.h
-/Users/oshvorak/push_swap/inc/push_swap.h
+/Users/aleksej/Documents/UNIT/push_swap/inc/push_swap.h
 
-/Users/oshvorak/push_swap/src/operations.c
+/Users/aleksej/Documents/UNIT/push_swap/src/operations.c
 ../inc/push_swap.h
-/Users/oshvorak/push_swap/inc/push_swap.h
+/Users/aleksej/Documents/UNIT/push_swap/inc/push_swap.h
 
-/Users/oshvorak/push_swap/src/process_struct.c
+/Users/aleksej/Documents/UNIT/push_swap/src/process_struct.c
 ../inc/push_swap.h
-/Users/oshvorak/push_swap/inc/push_swap.h
+/Users/aleksej/Documents/UNIT/push_swap/inc/push_swap.h
 
-/Users/oshvorak/push_swap/src/push_b.c
+/Users/aleksej/Documents/UNIT/push_swap/src/push_b.c
 ../inc/push_swap.h
-/Users/oshvorak/push_swap/inc/push_swap.h
+/Users/aleksej/Documents/UNIT/push_swap/inc/push_swap.h
 
-/Users/oshvorak/push_swap/src/reader.c
+/Users/aleksej/Documents/UNIT/push_swap/src/reader.c
 ../inc/push_swap.h
-/Users/oshvorak/push_swap/inc/push_swap.h
+/Users/aleksej/Documents/UNIT/push_swap/inc/push_swap.h
 
-/Users/oshvorak/push_swap/src/sort.c
+/Users/aleksej/Documents/UNIT/push_swap/src/sort.c
 ../inc/push_swap.h
-/Users/oshvorak/push_swap/inc/push_swap.h
+/Users/aleksej/Documents/UNIT/push_swap/inc/push_swap.h
 

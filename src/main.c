@@ -27,6 +27,7 @@ static t_game	*create_game(void)
 	game->a = NULL;
 	game->b = NULL;
 	game->a_remain = 0;
+	game->a_bottom = 0;
 	game->b_remain = 0;
 	game->b_bottom = 0;
 	game->block = NULL;

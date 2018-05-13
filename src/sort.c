@@ -44,7 +44,7 @@ void	sort_3elem_top(t_stack **stack)
 			swap(*stack);
 	}
 }
-//переделать
+
 void	clean_a(t_game *game)
 {
 	int	i;
@@ -60,11 +60,12 @@ void	clean_a(t_game *game)
 		{
 			push(&game->a, &game->b);
 			game->a_remain--;
+			game->b_remain++;
 		}
 		else
 		{
 			rotate(&game->a);
-			game->b_remain++;
+			game->a_bottom++;
 		}
 		i++;
 	}
@@ -94,6 +95,7 @@ void	push_a(t_game *game, int base, int size)
 void	sort(t_game *game)
 {
 	int i;
+	int j;
 	int size;
 	int base;
 
@@ -106,6 +108,12 @@ void	sort(t_game *game)
 		del_block_head(&game->block);
 		while (game->a_remain > 3)
 			clean_a(game);
+		j = 0;
+		while (j < game->a_bottom)
+		{
+			reverse_rotate(&game->a);
+			j++;
+		}
 		sort_3elem_top(&game->a);
 		(game->b_remain + game->b_bottom != 0) ? push_block(game, game->b_remain + game->b_bottom) : 0;
 		i = 0;
@@ -115,6 +123,7 @@ void	sort(t_game *game)
 			i++;
 		}
 		game->a_remain = 0;
+		game->a_bottom = 0;
 		game->b_remain = 0;
 		game->b_bottom = 0;
 	}

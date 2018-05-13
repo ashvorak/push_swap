@@ -49,8 +49,9 @@ int	return_base(t_stack *stack, int size)
 	tmp = stack;
 	while (i < size)
 	{
-		arr[i++] = tmp->value;
+		arr[i] = tmp->value;
 		tmp = tmp->next;
+		i++;
 	}
 	sort_arr(&arr[0], size);
 	return (arr[size / 2]);
