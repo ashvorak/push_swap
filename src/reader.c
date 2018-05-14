@@ -19,7 +19,6 @@ t_stack			*new_stack(int value)
 	if (!(stack = (t_stack*)malloc(sizeof(t_stack))))
 		return (NULL);
 	stack->value = value;
-	stack->prev = NULL;
 	stack->next = NULL;
 	return (stack);
 }
@@ -38,7 +37,6 @@ static	void	add_stack(t_stack **stack, int value)
 			tmp = tmp->next;
 		buf = new_stack(value);
 		tmp->next = buf;
-		buf->prev = tmp;
 	}
 }
 

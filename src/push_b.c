@@ -57,29 +57,30 @@ int	return_base(t_stack *stack, int size)
 	return (arr[size / 2]);
 }
 
-t_block *new_block(int size)
+t_block *new_block(int size, int bottom)
 {
 	t_block *block;
 
 	if (!(block = (t_block*)malloc(sizeof(t_block))))
 		return (NULL);
 	block->size = size;
+	block->bottom = bottom;
 	block->next = NULL;
 	return (block);
 }
 
-void		push_block(t_game *game, int count)
+void		push_block(t_game *game, int count, int bottom)
 {
 	t_block	*tmp;
 
 	if (game->block)
 	{
-		tmp = new_block(count);
+		tmp = new_block(count, bottom);
 		tmp->next = game->block;
 		game->block = tmp;
 	}
 	else
-		game->block = new_block(count);
+		game->block = new_block(count, bottom);
 }
 
 void		push_b(t_game *game)
@@ -99,14 +100,14 @@ void		push_b(t_game *game)
 		{
 			if (game->a->value <= base)
 			{
-				push(&game->a, &game->b);
+				push(&game->a, &game->b, &game->operations, "pb");
 				count++;
 			}
 			else
-				rotate(&game->a);
+				rotate(&game->a, &game->operations, "ra");
 			i++;
 		}
-		push_block(game, count);
+		push_block(game, count, 0);
 		size = stack_size(game->a);
 	}
 }

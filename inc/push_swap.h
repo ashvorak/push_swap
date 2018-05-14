@@ -22,13 +22,13 @@
 typedef	struct	s_stack
 {
 	int		value;
-	struct s_stack	*prev;
 	struct s_stack	*next;
 }				t_stack;
 
 typedef	struct	s_block
 {
 	int		size;
+	int		bottom;
 	struct s_block *next;
 }				t_block;
 
@@ -37,9 +37,9 @@ typedef struct	s_game
 	t_stack	*a;
 	t_stack	*b;
 	int	a_remain;
-	int a_bottom;
+	int	a_bottom;
 	int	b_remain;
-	int	b_bottom;
+	char **operations;
 	t_block *block;
 }				t_game;
 
@@ -48,10 +48,10 @@ t_stack			*reader(int ac, char **av);
 t_stack			*new_stack(int value);
 int				is_valid(t_stack *stack, char *str);
 
-void			swap(t_stack *stack);
-void			push(t_stack **stack_from, t_stack **stack_to);
-void			rotate(t_stack **stack);
-void			reverse_rotate(t_stack **stack);
+void			swap(t_stack *stack, char ***operations, char *operation);
+void			push(t_stack **stack_from, t_stack **stack_to, char ***operations, char *operation);
+void			rotate(t_stack **stack, char ***operations, char *operation);
+void			reverse_rotate(t_stack **stack, char ***operations, char *operation);
 
 void			del_stack_head(t_stack **stack);
 void			del_block_head(t_block **block);
@@ -63,9 +63,10 @@ void			push_b(t_game *game);
 int				stack_size(t_stack *stack);
 void			sort_arr(int *arr, int size);
 int				return_base(t_stack *stack, int size);
-t_block			*new_block(int size);
-void			push_block(t_game *game, int count);
+t_block			*new_block(int size, int bottom);
+void			push_block(t_game *game, int count, int bottom);
 
+char			**add_operation(char **operations, char *operation);
 void			print_stack(t_stack *stack);
 
 #endif

@@ -1,6 +1,6 @@
 #include "../inc/push_swap.h"
 
-void	swap(t_stack *stack)
+void	swap(t_stack *stack, char ***operations, char *operation)
 {
 	int buf;
 
@@ -10,9 +10,10 @@ void	swap(t_stack *stack)
 		stack->value = stack->next->value;
 		stack->next->value = buf;
 	}
+	*operations = add_operation(*operations, operation);
 }
 
-void	push(t_stack **stack_from, t_stack **stack_to)
+void	push(t_stack **stack_from, t_stack **stack_to, char ***operations, char *operation)
 {
 	int		buf;
 	t_stack	*tmp;
@@ -25,15 +26,15 @@ void	push(t_stack **stack_from, t_stack **stack_to)
 		{
 			tmp = new_stack(buf);
 			tmp->next = *stack_to;
-			(*stack_to)->prev = tmp;
 			*stack_to = tmp;
 		}
 		else
 			*stack_to = new_stack(buf);
 	}
+	*operations = add_operation(*operations, operation);
 }
 
-void	rotate(t_stack **stack)
+void	rotate(t_stack **stack, char ***operations, char *operation)
 {
 	t_stack *tmp;
 	t_stack *buf;
@@ -46,13 +47,12 @@ void	rotate(t_stack **stack)
 			tmp = tmp->next;
 		*stack = (*stack)->next;
 		tmp->next = buf;
-		buf->prev = tmp;
 		buf->next = NULL;
-		(*stack)->prev = NULL;
 	}
+	*operations = add_operation(*operations, operation);
 }
 
-void	reverse_rotate(t_stack **stack)
+void	reverse_rotate(t_stack **stack, char ***operations, char *operation)
 {
 	t_stack *tmp;
 	t_stack *buf;
@@ -64,8 +64,8 @@ void	reverse_rotate(t_stack **stack)
 			tmp = tmp->next;
 		buf = tmp->next;
 		tmp->next = NULL;
-		buf->prev = NULL;
 		buf->next = *stack;
 		*stack = buf;
 	}
+	*operations = add_operation(*operations, operation);
 }

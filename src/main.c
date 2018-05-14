@@ -29,7 +29,7 @@ static t_game	*create_game(void)
 	game->a_remain = 0;
 	game->a_bottom = 0;
 	game->b_remain = 0;
-	game->b_bottom = 0;
+	game->operations = NULL;
 	game->block = NULL;
 	return (game);
 }
@@ -47,10 +47,70 @@ void print_stack(t_stack *stack)
 	ft_printf("\n");
 }
 
+char  **add_operation(char **operations, char *operation)
+{
+	int		i;
+	int		size;
+	char	**new_operations;
+
+	i = 0;
+	size = (operations) ? ft_array_size(operations) : 0;
+	if (!(new_operations = (char**)malloc(sizeof(char*) * (size + 2))))
+		return (NULL);
+	while (i < size)
+	{
+		new_operations[i] = ft_strdup(operations[i]);
+		i++;
+	}
+	new_operations[i++] = ft_strdup(operation);
+	new_operations[i] = NULL;
+	ft_free_arr(operations);
+	return (new_operations);
+}
+
+static void		print_operations(char **operations)
+{
+	int i;
+	int num;
+
+	i = 0;
+	num = 0;
+	while (operations[i])
+	{
+		if (operations[i] && operations[i + 1])
+		{
+			if ((!ft_strcmp(operations[i], "sa") && !ft_strcmp(operations[i + 1], "sb")) || \
+        (!ft_strcmp(operations[i], "sb") && !ft_strcmp(operations[i + 1], "sa"))) {
+				ft_printf("%s\n", "ss");
+				num++;
+				i++;
+			} else if ((!ft_strcmp(operations[i], "ra") && !ft_strcmp(operations[i + 1], "rb")) || \
+        (!ft_strcmp(operations[i], "rb") && !ft_strcmp(operations[i + 1], "ra"))) {
+				ft_printf("%s\n", "rr");
+				num++;
+				i++;
+			} else if ((!ft_strcmp(operations[i], "rra") && !ft_strcmp(operations[i + 1], "rrb")) || \
+        (!ft_strcmp(operations[i], "rrb") && !ft_strcmp(operations[i + 1], "rra"))) {
+				ft_printf("%s\n", "rrr");
+				num++;
+				i++;
+			} else {
+				ft_printf("%s\n", operations[i]);
+				num++;
+			}
+		}
+		else {
+			ft_printf("%s\n", operations[i]);
+			num++;
+		}
+		i++;
+	}
+	ft_printf("num = %d\n", num);
+}
+
 int main(int ac, char **av)
 {
 	t_game	*game;
-	t_block	*block;
 
 	if (ac > 1)
 	{
@@ -62,12 +122,7 @@ int main(int ac, char **av)
 		print_stack(game->a);
 		ft_printf("stack b : ");
 		print_stack(game->b);
-		block = game->block;
-		while (block)
-		{
-			ft_printf("%d ", block->size);
-			block = block->next;
-		}
+		print_operations(game->operations);
 	}
 	else
 		ft_error();
