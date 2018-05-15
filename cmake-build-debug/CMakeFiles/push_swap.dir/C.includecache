@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/oshvorak/push_swap/inc/cheсker.h
+push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
 /Users/oshvorak/push_swap/inc/push_swap.h
 fcntl.h
 -
@@ -369,6 +373,14 @@ stdlib.h
 -
 string.h
 -
+
+/Users/oshvorak/push_swap/src/checker/checker.c
+../../inc/cheсker.h
+/Users/oshvorak/push_swap/inc/cheсker.h
+
+/Users/oshvorak/push_swap/src/checker/main.c
+../../inc/cheсker.h
+/Users/oshvorak/push_swap/inc/cheсker.h
 
 /Users/oshvorak/push_swap/src/is_valid.c
 ../inc/push_swap.h

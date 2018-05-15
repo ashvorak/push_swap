@@ -92,6 +92,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/oshvorak/push_swap/lib/ft_tolower.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/lib/ft_tolower.c.o"
   "/Users/oshvorak/push_swap/lib/ft_toupper.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/lib/ft_toupper.c.o"
   "/Users/oshvorak/push_swap/lib/get_next_line/get_next_line.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/lib/get_next_line/get_next_line.c.o"
+  "/Users/oshvorak/push_swap/src/checker/checker.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/checker/checker.c.o"
+  "/Users/oshvorak/push_swap/src/checker/main.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/checker/main.c.o"
   "/Users/oshvorak/push_swap/src/is_valid.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/is_valid.c.o"
   "/Users/oshvorak/push_swap/src/main.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/main.c.o"
   "/Users/oshvorak/push_swap/src/operations.c" "/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles/push_swap.dir/src/operations.c.o"

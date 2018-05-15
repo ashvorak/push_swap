@@ -2337,6 +2337,54 @@ CMakeFiles/push_swap.dir/src/push_b.c.o.provides: CMakeFiles/push_swap.dir/src/p
 CMakeFiles/push_swap.dir/src/push_b.c.o.provides.build: CMakeFiles/push_swap.dir/src/push_b.c.o
 
 
+CMakeFiles/push_swap.dir/src/checker/main.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/src/checker/main.c.o: ../src/checker/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/push_swap.dir/src/checker/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/checker/main.c.o   -c /Users/oshvorak/push_swap/src/checker/main.c
+
+CMakeFiles/push_swap.dir/src/checker/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/src/checker/main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/push_swap/src/checker/main.c > CMakeFiles/push_swap.dir/src/checker/main.c.i
+
+CMakeFiles/push_swap.dir/src/checker/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/checker/main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/push_swap/src/checker/main.c -o CMakeFiles/push_swap.dir/src/checker/main.c.s
+
+CMakeFiles/push_swap.dir/src/checker/main.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/src/checker/main.c.o.requires
+
+CMakeFiles/push_swap.dir/src/checker/main.c.o.provides: CMakeFiles/push_swap.dir/src/checker/main.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/main.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/src/checker/main.c.o.provides
+
+CMakeFiles/push_swap.dir/src/checker/main.c.o.provides.build: CMakeFiles/push_swap.dir/src/checker/main.c.o
+
+
+CMakeFiles/push_swap.dir/src/checker/checker.c.o: CMakeFiles/push_swap.dir/flags.make
+CMakeFiles/push_swap.dir/src/checker/checker.c.o: ../src/checker/checker.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/push_swap.dir/src/checker/checker.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/push_swap.dir/src/checker/checker.c.o   -c /Users/oshvorak/push_swap/src/checker/checker.c
+
+CMakeFiles/push_swap.dir/src/checker/checker.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/push_swap.dir/src/checker/checker.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/oshvorak/push_swap/src/checker/checker.c > CMakeFiles/push_swap.dir/src/checker/checker.c.i
+
+CMakeFiles/push_swap.dir/src/checker/checker.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/push_swap.dir/src/checker/checker.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/oshvorak/push_swap/src/checker/checker.c -o CMakeFiles/push_swap.dir/src/checker/checker.c.s
+
+CMakeFiles/push_swap.dir/src/checker/checker.c.o.requires:
+
+.PHONY : CMakeFiles/push_swap.dir/src/checker/checker.c.o.requires
+
+CMakeFiles/push_swap.dir/src/checker/checker.c.o.provides: CMakeFiles/push_swap.dir/src/checker/checker.c.o.requires
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/checker.c.o.provides.build
+.PHONY : CMakeFiles/push_swap.dir/src/checker/checker.c.o.provides
+
+CMakeFiles/push_swap.dir/src/checker/checker.c.o.provides.build: CMakeFiles/push_swap.dir/src/checker/checker.c.o
+
+
 # Object files for target push_swap
 push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/lib/ft_printf/src/active_bits.c.o" \
@@ -2433,7 +2481,9 @@ push_swap_OBJECTS = \
 "CMakeFiles/push_swap.dir/src/operations.c.o" \
 "CMakeFiles/push_swap.dir/src/process_struct.c.o" \
 "CMakeFiles/push_swap.dir/src/sort.c.o" \
-"CMakeFiles/push_swap.dir/src/push_b.c.o"
+"CMakeFiles/push_swap.dir/src/push_b.c.o" \
+"CMakeFiles/push_swap.dir/src/checker/main.c.o" \
+"CMakeFiles/push_swap.dir/src/checker/checker.c.o"
 
 # External object files for target push_swap
 push_swap_EXTERNAL_OBJECTS =
@@ -2533,9 +2583,11 @@ push_swap: CMakeFiles/push_swap.dir/src/operations.c.o
 push_swap: CMakeFiles/push_swap.dir/src/process_struct.c.o
 push_swap: CMakeFiles/push_swap.dir/src/sort.c.o
 push_swap: CMakeFiles/push_swap.dir/src/push_b.c.o
+push_swap: CMakeFiles/push_swap.dir/src/checker/main.c.o
+push_swap: CMakeFiles/push_swap.dir/src/checker/checker.c.o
 push_swap: CMakeFiles/push_swap.dir/build.make
 push_swap: CMakeFiles/push_swap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Linking C executable push_swap"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/oshvorak/push_swap/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Linking C executable push_swap"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/push_swap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2638,6 +2690,8 @@ CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/operations.c.o.r
 CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/process_struct.c.o.requires
 CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/sort.c.o.requires
 CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/push_b.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/checker/main.c.o.requires
+CMakeFiles/push_swap.dir/requires: CMakeFiles/push_swap.dir/src/checker/checker.c.o.requires
 
 .PHONY : CMakeFiles/push_swap.dir/requires
 

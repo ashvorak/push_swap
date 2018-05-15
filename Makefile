@@ -6,33 +6,45 @@
 #    By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/23 11:59:18 by oshvorak          #+#    #+#              #
-#    Updated: 2018/05/09 11:49:18 by oshvorak         ###   ########.fr        #
+#    Updated: 2018/05/15 13:56:20 by oshvorak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME_PS = push_swap
+NAME1 = push_swap
 
-NAME_CH = checker
+NAME2 = checker
 
-SRC =	./src/main.c \
-		./src/reader.c
+SRC1 =	./src/main.c \
+		./src/push_b.c \
+		./src/sort.c
+
+SRC2 =	./src/checker/main.c \
+		./src/checker/checker.c
+
+SRC3 = 	./src/reader.c \
+		./src/is_valid.c \
+		./src/operations.c \
+		./src/process_struct.c
 
 MLIB = make -C lib
 
 LIB = lib/libftprintf.a
 
-all: $(NAME_PS)
+all: $(NAME1) $(NAME2)
 
-$(NAME_PS): $(SRC)
+$(NAME1): $(SRC1)
 	$(MLIB)
-	gcc -Wall -Wextra -Werror $(SRC) $(LIB) -o $(NAME_PS)
-	
+	gcc -Wall -Wextra -Werror $(SRC1) $(SRC3) $(LIB) -o $(NAME1)
+
+$(NAME2): $(SRC2)
+	$(MLIB)
+	gcc -Wall -Wextra -Werror $(SRC2) $(SRC3) $(LIB) -o $(NAME2)
+
 clean:
-	rm -f $(OBJ)
 	$(MLIB) clean
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME1) $(NAME2)
 	$(MLIB) fclean
 
 re: fclean all

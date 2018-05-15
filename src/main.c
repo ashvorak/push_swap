@@ -6,17 +6,11 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 13:45:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/09 11:57:46 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/15 15:31:58 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
-
-void	ft_error(void)
-{
-	ft_putstr("Error\n");
-	exit(1);
-}
 
 static t_game	*create_game(void)
 {
@@ -33,7 +27,7 @@ static t_game	*create_game(void)
 	game->block = NULL;
 	return (game);
 }
-
+/*
 void print_stack(t_stack *stack)
 {
 	t_stack *tmp;
@@ -46,27 +40,7 @@ void print_stack(t_stack *stack)
 	}
 	ft_printf("\n");
 }
-
-char  **add_operation(char **operations, char *operation)
-{
-	int		i;
-	int		size;
-	char	**new_operations;
-
-	i = 0;
-	size = (operations) ? ft_array_size(operations) : 0;
-	if (!(new_operations = (char**)malloc(sizeof(char*) * (size + 2))))
-		return (NULL);
-	while (i < size)
-	{
-		new_operations[i] = ft_strdup(operations[i]);
-		i++;
-	}
-	new_operations[i++] = ft_strdup(operation);
-	new_operations[i] = NULL;
-	ft_free_arr(operations);
-	return (new_operations);
-}
+*/
 
 static void		print_operations(char **operations)
 {
@@ -105,7 +79,7 @@ static void		print_operations(char **operations)
 		}
 		i++;
 	}
-	ft_printf("num = %d\n", num);
+	//ft_printf("num = %d\n", num);
 }
 
 int main(int ac, char **av)
@@ -116,12 +90,14 @@ int main(int ac, char **av)
 	{
 		game = create_game();
 		game->a = reader(ac, av);
+		if (is_sort(game->a))
+			return (0);
 		push_b(game);
 		sort(game);
-		ft_printf("stack a : ");
-		print_stack(game->a);
-		ft_printf("stack b : ");
-		print_stack(game->b);
+		//ft_printf("stack a : ");
+		//print_stack(game->a);
+		//ft_printf("stack b : ");
+		//print_stack(game->b);
 		print_operations(game->operations);
 	}
 	else

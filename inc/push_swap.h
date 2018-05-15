@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 13:53:53 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/09 11:54:33 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/15 15:10:18 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,7 @@ t_block			*new_block(int size, int bottom);
 void			push_block(t_game *game, int count, int bottom);
 
 char			**add_operation(char **operations, char *operation);
+int				is_sort(t_stack *stack);
 void			print_stack(t_stack *stack);
 
 #endif

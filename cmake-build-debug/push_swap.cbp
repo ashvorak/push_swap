@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/oshvorak/push_swap/inc/cheсker.h">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/inc/push_swap.h">
 			<Option target="push_swap"/>
 		</Unit>
@@ -354,6 +357,12 @@
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/lib/libft.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/checker/checker.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/checker/main.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/is_valid.c">

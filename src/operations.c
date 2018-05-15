@@ -10,7 +10,8 @@ void	swap(t_stack *stack, char ***operations, char *operation)
 		stack->value = stack->next->value;
 		stack->next->value = buf;
 	}
-	*operations = add_operation(*operations, operation);
+	if (operation)
+		*operations = add_operation(*operations, operation);
 }
 
 void	push(t_stack **stack_from, t_stack **stack_to, char ***operations, char *operation)
@@ -31,7 +32,8 @@ void	push(t_stack **stack_from, t_stack **stack_to, char ***operations, char *op
 		else
 			*stack_to = new_stack(buf);
 	}
-	*operations = add_operation(*operations, operation);
+	if (operation)
+		*operations = add_operation(*operations, operation);
 }
 
 void	rotate(t_stack **stack, char ***operations, char *operation)
@@ -49,7 +51,8 @@ void	rotate(t_stack **stack, char ***operations, char *operation)
 		tmp->next = buf;
 		buf->next = NULL;
 	}
-	*operations = add_operation(*operations, operation);
+	if (operation)
+		*operations = add_operation(*operations, operation);
 }
 
 void	reverse_rotate(t_stack **stack, char ***operations, char *operation)
@@ -67,5 +70,6 @@ void	reverse_rotate(t_stack **stack, char ***operations, char *operation)
 		buf->next = *stack;
 		*stack = buf;
 	}
-	*operations = add_operation(*operations, operation);
+	if (operation)
+		*operations = add_operation(*operations, operation);
 }

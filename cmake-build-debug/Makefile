@@ -2499,6 +2499,60 @@ lib/get_next_line/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/lib/get_next_line/get_next_line.c.s
 .PHONY : lib/get_next_line/get_next_line.c.s
 
+src/checker/checker.o: src/checker/checker.c.o
+
+.PHONY : src/checker/checker.o
+
+# target to build an object file
+src/checker/checker.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/checker.c.o
+.PHONY : src/checker/checker.c.o
+
+src/checker/checker.i: src/checker/checker.c.i
+
+.PHONY : src/checker/checker.i
+
+# target to preprocess a source file
+src/checker/checker.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/checker.c.i
+.PHONY : src/checker/checker.c.i
+
+src/checker/checker.s: src/checker/checker.c.s
+
+.PHONY : src/checker/checker.s
+
+# target to generate assembly for a file
+src/checker/checker.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/checker.c.s
+.PHONY : src/checker/checker.c.s
+
+src/checker/main.o: src/checker/main.c.o
+
+.PHONY : src/checker/main.o
+
+# target to build an object file
+src/checker/main.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/main.c.o
+.PHONY : src/checker/main.c.o
+
+src/checker/main.i: src/checker/main.c.i
+
+.PHONY : src/checker/main.i
+
+# target to preprocess a source file
+src/checker/main.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/main.c.i
+.PHONY : src/checker/main.c.i
+
+src/checker/main.s: src/checker/main.c.s
+
+.PHONY : src/checker/main.s
+
+# target to generate assembly for a file
+src/checker/main.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/main.c.s
+.PHONY : src/checker/main.c.s
+
 src/is_valid.o: src/is_valid.c.o
 
 .PHONY : src/is_valid.o
@@ -2961,6 +3015,12 @@ help:
 	@echo "... lib/get_next_line/get_next_line.o"
 	@echo "... lib/get_next_line/get_next_line.i"
 	@echo "... lib/get_next_line/get_next_line.s"
+	@echo "... src/checker/checker.o"
+	@echo "... src/checker/checker.i"
+	@echo "... src/checker/checker.s"
+	@echo "... src/checker/main.o"
+	@echo "... src/checker/main.i"
+	@echo "... src/checker/main.s"
 	@echo "... src/is_valid.o"
 	@echo "... src/is_valid.i"
 	@echo "... src/is_valid.s"
