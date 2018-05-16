@@ -131,13 +131,41 @@ void 	fix_stack_a(t_game *game)
 
 void 	fix_block(t_game *game, t_block *block)
 {
-	int i;
+	int 	i;
+	int		base;
+	int		len;
+	int 	size;
+	t_stack	*tmp;
 
 	i = 0;
-	while (i < block->bottom)
+	while (i < block->size)
+	{
+		rotate(&game->b, &game->operations, "rb");
+		block->bottom++;
+		i++;
+	}
+	block->size = 0;
+	tmp = game->b;
+	size = stack_size(tmp);
+	while (size != block->bottom)
+	{
+		tmp = tmp->next;
+		size = stack_size(tmp);
+	}
+	base = return_base(tmp, block->bottom);
+	i = 0;
+	len = block->bottom;
+	while (i < len)
 	{
 		reverse_rotate(&game->b, &game->operations, "rrb");
-		block->size++;
+		if (game->b->value >= base)
+		{
+			push(&game->b, &game->a, &game->operations, "pa");
+			game->a_remain++;
+			block->bottom--;
+		}
+		else
+			block->size++;
 		i++;
 	}
 	block->bottom = 0;
@@ -151,10 +179,9 @@ void	sort(t_game *game)
 	sort_3elem(&game->a, &game->operations);
 	while (stack_size(game->b))
 	{
-		fix_block(game, game->block);
 		size = game->block->size;
 		base = return_base(game->b, size);
-		push_a(game, base, size);
+		(game->block->bottom) ? fix_block(game, game->block) : push_a(game, base, size);
 		(!game->block->size && !game->block->bottom) ? del_block_head(&game->block) : 0;
 		while (game->a_remain > 3)
 		{

@@ -94,7 +94,7 @@ void		print_operations(char **operations)
 		}
 		i++;
 	}
-	ft_printf("num = %d\n", num);
+	//ft_printf("num = %d\n", num);
 }
 
 char	**convert_operations(char **operations)

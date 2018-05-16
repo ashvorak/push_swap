@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 13:45:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/16 15:07:47 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/16 18:45:49 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ int main(int ac, char **av)
 			return (0);
 		push_b(game);
 		sort(game);
-		ft_printf("stack a : ");
-		print_stack(game->a);
-		ft_printf("stack b : ");
-		print_stack(game->b);
+		//ft_printf("stack a : ");
+		//print_stack(game->a);
+		//ft_printf("stack b : ");
+		//print_stack(game->b);
 		game->operations = convert_operations(game->operations);
 		print_operations(game->operations);
 	}
