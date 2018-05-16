@@ -365,6 +365,9 @@
 		<Unit filename="/Users/oshvorak/push_swap/src/checker/main.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/convert_operations.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/is_valid.c">
 			<Option target="push_swap"/>
 		</Unit>

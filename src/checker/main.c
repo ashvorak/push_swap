@@ -1,5 +1,5 @@
 #include "../../inc/cheсker.h"
-
+/*
 int main(int ac, char **av)
 {
 	t_stack *a;
@@ -21,3 +21,4 @@ int main(int ac, char **av)
 		ft_error();
 	return (0);
 }
+*/

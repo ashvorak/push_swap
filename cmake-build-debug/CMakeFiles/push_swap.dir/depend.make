@@ -286,6 +286,12 @@ CMakeFiles/push_swap.dir/src/checker/main.c.o: ../lib/get_next_line/get_next_lin
 CMakeFiles/push_swap.dir/src/checker/main.c.o: ../lib/libft.h
 CMakeFiles/push_swap.dir/src/checker/main.c.o: ../src/checker/main.c
 
+CMakeFiles/push_swap.dir/src/convert_operations.c.o: ../inc/push_swap.h
+CMakeFiles/push_swap.dir/src/convert_operations.c.o: ../lib/ft_printf/inc/ft_printf.h
+CMakeFiles/push_swap.dir/src/convert_operations.c.o: ../lib/get_next_line/get_next_line.h
+CMakeFiles/push_swap.dir/src/convert_operations.c.o: ../lib/libft.h
+CMakeFiles/push_swap.dir/src/convert_operations.c.o: ../src/convert_operations.c
+
 CMakeFiles/push_swap.dir/src/is_valid.c.o: ../inc/push_swap.h
 CMakeFiles/push_swap.dir/src/is_valid.c.o: ../lib/ft_printf/inc/ft_printf.h
 CMakeFiles/push_swap.dir/src/is_valid.c.o: ../lib/get_next_line/get_next_line.h

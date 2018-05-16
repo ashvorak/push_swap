@@ -6,7 +6,7 @@
 #    By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/23 11:59:18 by oshvorak          #+#    #+#              #
-#    Updated: 2018/05/15 13:56:20 by oshvorak         ###   ########.fr        #
+#    Updated: 2018/05/16 13:38:43 by oshvorak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,8 @@ NAME2 = checker
 
 SRC1 =	./src/main.c \
 		./src/push_b.c \
-		./src/sort.c
+		./src/sort.c \
+		./src/convert_operations.c
 
 SRC2 =	./src/checker/main.c \
 		./src/checker/checker.c

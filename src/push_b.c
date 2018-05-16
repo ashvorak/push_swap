@@ -83,6 +83,22 @@ void		push_block(t_game *game, int count, int bottom)
 		game->block = new_block(count, bottom);
 }
 
+void		ret_bottom(t_game *game, int base)
+{
+	t_stack *tmp;
+
+	tmp = game->a;
+	while (tmp->next)
+		tmp = tmp->next;
+	while (tmp->value < base)
+	{
+		reverse_rotate(&game->a, &game->operations, "rra");
+		tmp = game->a;
+		while (tmp->next)
+			tmp = tmp->next;
+	}
+}
+
 void		push_b(t_game *game)
 {
 	int				i;
@@ -96,16 +112,20 @@ void		push_b(t_game *game)
 		base = return_base(game->a, size);
 		i = 0;
 		count = 0;
+		ret_bottom(game, base);
 		while (i < size)
 		{
-			if (game->a->value <= base)
+			if (is_need_push(game->a, base, size))
 			{
-				push(&game->a, &game->b, &game->operations, "pb");
-				count++;
+				if (game->a->value < base)
+				{
+					push(&game->a, &game->b, &game->operations, "pb");
+					count++;
+				}
+				else
+					rotate(&game->a, &game->operations, "ra");
+				i++;
 			}
-			else
-				rotate(&game->a, &game->operations, "ra");
-			i++;
 		}
 		push_block(game, count, 0);
 		size = stack_size(game->a);

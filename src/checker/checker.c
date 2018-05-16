@@ -36,6 +36,7 @@ int	checker(t_stack *a, char **operations)
 	t_stack *b;
 
 	i = 0;
+	b = NULL;
 	if (operations)
 	{
 		while (operations[i])

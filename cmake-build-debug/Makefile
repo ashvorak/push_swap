@@ -2553,6 +2553,33 @@ src/checker/main.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/main.c.s
 .PHONY : src/checker/main.c.s
 
+src/convert_operations.o: src/convert_operations.c.o
+
+.PHONY : src/convert_operations.o
+
+# target to build an object file
+src/convert_operations.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/convert_operations.c.o
+.PHONY : src/convert_operations.c.o
+
+src/convert_operations.i: src/convert_operations.c.i
+
+.PHONY : src/convert_operations.i
+
+# target to preprocess a source file
+src/convert_operations.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/convert_operations.c.i
+.PHONY : src/convert_operations.c.i
+
+src/convert_operations.s: src/convert_operations.c.s
+
+.PHONY : src/convert_operations.s
+
+# target to generate assembly for a file
+src/convert_operations.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/convert_operations.c.s
+.PHONY : src/convert_operations.c.s
+
 src/is_valid.o: src/is_valid.c.o
 
 .PHONY : src/is_valid.o
@@ -3021,6 +3048,9 @@ help:
 	@echo "... src/checker/main.o"
 	@echo "... src/checker/main.i"
 	@echo "... src/checker/main.s"
+	@echo "... src/convert_operations.o"
+	@echo "... src/convert_operations.i"
+	@echo "... src/convert_operations.s"
 	@echo "... src/is_valid.o"
 	@echo "... src/is_valid.i"
 	@echo "... src/is_valid.s"

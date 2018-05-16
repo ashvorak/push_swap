@@ -382,6 +382,10 @@ string.h
 ../../inc/cheсker.h
 /Users/oshvorak/push_swap/inc/cheсker.h
 
+/Users/oshvorak/push_swap/src/convert_operations.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
 /Users/oshvorak/push_swap/src/is_valid.c
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h

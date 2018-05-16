@@ -72,6 +72,23 @@ void	clean_a(t_game *game)
 	}
 }
 
+int is_need_push(t_stack *stack, int base, int size)
+{
+	int 	i;
+	t_stack *tmp;
+
+	i = 0;
+	tmp = stack;
+	while (i < size)
+	{
+		if (base <= tmp->value)
+			return (1);
+		tmp = tmp->next;
+		i++;
+	}
+	return (0);
+}
+
 void	push_a(t_game *game, int base, int size)
 {
 	int	i;
@@ -79,18 +96,23 @@ void	push_a(t_game *game, int base, int size)
 	i = 0;
 	while (i < size)
 	{
-		if (game->b->value >= base)
+		if (is_need_push(game->b, base, size - i))
 		{
-			push(&game->b, &game->a, &game->operations, "pa");
-			game->a_remain++;
+			if (game->b->value >= base)
+			{
+				push(&game->b, &game->a, &game->operations, "pa");
+				game->a_remain++;
+			}
+			else
+			{
+				rotate(&game->b, &game->operations, "rb");
+				game->block->bottom++;
+			}
+			game->block->size--;
+			i++;
 		}
 		else
-		{
-			rotate(&game->b, &game->operations, "rb");
-			game->block->bottom++;
-		}
-		game->block->size--;
-		i++;
+			return ;
 	}
 }
 
@@ -143,6 +165,6 @@ void	sort(t_game *game)
 		fix_stack_a(game);
 		game->a_remain = 0;
 		game->b_remain = 0;
-		sort_3elem_top(&game->a, &game->operations);
+		!is_sort(game->a) ? sort_3elem_top(&game->a, &game->operations) : 0;
 	}
 }

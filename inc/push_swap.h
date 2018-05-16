@@ -65,9 +65,12 @@ void			sort_arr(int *arr, int size);
 int				return_base(t_stack *stack, int size);
 t_block			*new_block(int size, int bottom);
 void			push_block(t_game *game, int count, int bottom);
+int				is_need_push(t_stack *stack, int base, int size);
 
 char			**add_operation(char **operations, char *operation);
 int				is_sort(t_stack *stack);
 void			print_stack(t_stack *stack);
+char			**convert_operations(char **operations);
+void			print_operations(char **operations);
 
 #endif
