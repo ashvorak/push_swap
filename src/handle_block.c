@@ -23,7 +23,8 @@ static	void	reverse_push_a(t_game *game, t_stack *tmp, t_block *block)
 	base = return_base(tmp, block->bottom);
 	while (i < len)
 	{
-		reverse_rotate(&game->b, &game->operations, "rrb");
+		(stack_size(game->b) > 1) ? \
+		reverse_rotate(&game->b, &game->operations, "rrb") : 0;
 		if (game->b->value >= base)
 		{
 			push(&game->b, &game->a, &game->operations, "pa");

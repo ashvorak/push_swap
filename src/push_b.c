@@ -37,7 +37,7 @@ static int		is_need_push(t_stack *stack, int base, int size)
 	tmp = stack;
 	while (i < size)
 	{
-		if (base < tmp->value)
+		if (base > tmp->value)
 			return (1);
 		tmp = tmp->next;
 		i++;
