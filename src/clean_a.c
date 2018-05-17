@@ -1,26 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_arr.c                                      :+:      :+:    :+:   */
+/*   clean_a.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/11 14:04:16 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/04/11 14:10:02 by oshvorak         ###   ########.fr       */
+/*   Created: 2018/05/17 18:43:31 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/17 18:43:50 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../inc/push_swap.h"
 
-void		ft_free_arr(char **arr)
+void	clean_a(t_game *game)
 {
-	int i;
+	int	i;
+	int base;
+	int size;
 
 	i = 0;
-	if (arr)
+	base = return_base(game->a, game->a_remain);
+	game->b_remain = 0;
+	size = game->a_remain;
+	while (i < size)
 	{
-		while (arr[i])
-			ft_strdel(&arr[i++]);
-		free(arr);
+		if (game->a->value < base)
+		{
+			push(&game->a, &game->b, &game->operations, "pb");
+			game->a_remain--;
+			game->b_remain++;
+		}
+		else
+		{
+			rotate(&game->a, &game->operations, "ra");
+			game->a_bottom++;
+		}
+		i++;
 	}
 }

@@ -1,25 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   convert_operations.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/17 15:18:53 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/17 19:33:17 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/push_swap.h"
 
-static int			convert_arr(char **operations)
+static int			convert_arr(char **op)
 {
 	int i;
 	int ret;
 
 	i = 0;
 	ret = 0;
-	while (operations[i])
+	while (op[i])
 	{
-		if (operations[i] && operations[i + 1])
+		if (op[i] && op[i + 1])
 		{
-			if ((!ft_strcmp(operations[i], "pa") && !ft_strcmp(operations[i + 1], "pb")) \
- 			|| (!ft_strcmp(operations[i], "pb") && !ft_strcmp(operations[i + 1], "pa")) \
-			|| (!ft_strcmp(operations[i], "ra") && !ft_strcmp(operations[i + 1], "rra")) \
- 			|| (!ft_strcmp(operations[i], "rra") && !ft_strcmp(operations[i + 1], "ra")) \
- 			|| (!ft_strcmp(operations[i], "rb") && !ft_strcmp(operations[i + 1], "rrb")) \
- 			|| (!ft_strcmp(operations[i], "rrb") && !ft_strcmp(operations[i + 1], "rb")))
+			if ((!ft_strcmp(op[i], "pa") && !ft_strcmp(op[i + 1], "pb")) \
+			|| (!ft_strcmp(op[i], "pb") && !ft_strcmp(op[i + 1], "pa")) \
+			|| (!ft_strcmp(op[i], "ra") && !ft_strcmp(op[i + 1], "rra")) \
+			|| (!ft_strcmp(op[i], "rra") && !ft_strcmp(op[i + 1], "ra")) \
+			|| (!ft_strcmp(op[i], "rb") && !ft_strcmp(op[i + 1], "rrb")) \
+			|| (!ft_strcmp(op[i], "rrb") && !ft_strcmp(op[i + 1], "rb")))
 			{
-				ft_memset(operations[i], '*', ft_strlen(operations[i]));
-				ft_memset(operations[i + 1], '*', ft_strlen(operations[i + 1]));
+				ft_memset(op[i], '*', ft_strlen(op[i]));
+				ft_memset(op[i + 1], '*', ft_strlen(op[i + 1]));
 				ret = 1;
 			}
 		}
@@ -28,7 +40,7 @@ static int			convert_arr(char **operations)
 	return (ret);
 }
 
-static char			**ret_new_operations(char **operations)
+static char			**ret_new_operations(char **op)
 {
 	int		i;
 	int		j;
@@ -37,9 +49,9 @@ static char			**ret_new_operations(char **operations)
 
 	i = 0;
 	size = 0;
-	while (operations[i])
+	while (op[i])
 	{
-		if (!ft_strstr(operations[i], "*"))
+		if (!ft_strstr(op[i], "*"))
 			size++;
 		i++;
 	}
@@ -47,57 +59,17 @@ static char			**ret_new_operations(char **operations)
 		return (NULL);
 	i = 0;
 	j = 0;
-	while (operations[j])
+	while (op[j])
 	{
-		!ft_strstr(operations[j], "*") ? new_operations[i++] = ft_strdup(operations[j]) : 0;
+		!ft_strstr(op[j], "*") ? new_operations[i++] = ft_strdup(op[j]) : 0;
 		j++;
 	}
 	new_operations[i] = NULL;
-	//ft_free_arr(operations);
+	ft_free_arr(op);
 	return (new_operations);
 }
 
-void		print_operations(char **operations)
-{
-	int i;
-	int num;
-
-	i = 0;
-	num = 0;
-	while (operations[i])
-	{
-		if (operations[i] && operations[i + 1])
-		{
-			if ((!ft_strcmp(operations[i], "sa") && !ft_strcmp(operations[i + 1], "sb")) || \
-        (!ft_strcmp(operations[i], "sb") && !ft_strcmp(operations[i + 1], "sa"))) {
-				ft_printf("%s\n", "ss");
-				num++;
-				i++;
-			} else if ((!ft_strcmp(operations[i], "ra") && !ft_strcmp(operations[i + 1], "rb")) || \
-        (!ft_strcmp(operations[i], "rb") && !ft_strcmp(operations[i + 1], "ra"))) {
-				ft_printf("%s\n", "rr");
-				num++;
-				i++;
-			} else if ((!ft_strcmp(operations[i], "rra") && !ft_strcmp(operations[i + 1], "rrb")) || \
-        (!ft_strcmp(operations[i], "rrb") && !ft_strcmp(operations[i + 1], "rra"))) {
-				ft_printf("%s\n", "rrr");
-				num++;
-				i++;
-			} else {
-				ft_printf("%s\n", operations[i]);
-				num++;
-			}
-		}
-		else {
-			ft_printf("%s\n", operations[i]);
-			num++;
-		}
-		i++;
-	}
-	//ft_printf("num = %d\n", num);
-}
-
-char	**convert_operations(char **operations)
+char				**convert_operations(char **operations)
 {
 	int		ret;
 	char	**new_operations;

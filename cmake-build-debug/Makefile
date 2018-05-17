@@ -2553,6 +2553,33 @@ src/checker/main.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/checker/main.c.s
 .PHONY : src/checker/main.c.s
 
+src/clean_a.o: src/clean_a.c.o
+
+.PHONY : src/clean_a.o
+
+# target to build an object file
+src/clean_a.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/clean_a.c.o
+.PHONY : src/clean_a.c.o
+
+src/clean_a.i: src/clean_a.c.i
+
+.PHONY : src/clean_a.i
+
+# target to preprocess a source file
+src/clean_a.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/clean_a.c.i
+.PHONY : src/clean_a.c.i
+
+src/clean_a.s: src/clean_a.c.s
+
+.PHONY : src/clean_a.s
+
+# target to generate assembly for a file
+src/clean_a.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/clean_a.c.s
+.PHONY : src/clean_a.c.s
+
 src/convert_operations.o: src/convert_operations.c.o
 
 .PHONY : src/convert_operations.o
@@ -2579,6 +2606,33 @@ src/convert_operations.s: src/convert_operations.c.s
 src/convert_operations.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/convert_operations.c.s
 .PHONY : src/convert_operations.c.s
+
+src/handle_block.o: src/handle_block.c.o
+
+.PHONY : src/handle_block.o
+
+# target to build an object file
+src/handle_block.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/handle_block.c.o
+.PHONY : src/handle_block.c.o
+
+src/handle_block.i: src/handle_block.c.i
+
+.PHONY : src/handle_block.i
+
+# target to preprocess a source file
+src/handle_block.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/handle_block.c.i
+.PHONY : src/handle_block.c.i
+
+src/handle_block.s: src/handle_block.c.s
+
+.PHONY : src/handle_block.s
+
+# target to generate assembly for a file
+src/handle_block.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/handle_block.c.s
+.PHONY : src/handle_block.c.s
 
 src/is_valid.o: src/is_valid.c.o
 
@@ -2661,6 +2715,33 @@ src/operations.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/operations.c.s
 .PHONY : src/operations.c.s
 
+src/print_operations.o: src/print_operations.c.o
+
+.PHONY : src/print_operations.o
+
+# target to build an object file
+src/print_operations.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/print_operations.c.o
+.PHONY : src/print_operations.c.o
+
+src/print_operations.i: src/print_operations.c.i
+
+.PHONY : src/print_operations.i
+
+# target to preprocess a source file
+src/print_operations.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/print_operations.c.i
+.PHONY : src/print_operations.c.i
+
+src/print_operations.s: src/print_operations.c.s
+
+.PHONY : src/print_operations.s
+
+# target to generate assembly for a file
+src/print_operations.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/print_operations.c.s
+.PHONY : src/print_operations.c.s
+
 src/process_struct.o: src/process_struct.c.o
 
 .PHONY : src/process_struct.o
@@ -2687,6 +2768,33 @@ src/process_struct.s: src/process_struct.c.s
 src/process_struct.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/process_struct.c.s
 .PHONY : src/process_struct.c.s
+
+src/push_a.o: src/push_a.c.o
+
+.PHONY : src/push_a.o
+
+# target to build an object file
+src/push_a.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_a.c.o
+.PHONY : src/push_a.c.o
+
+src/push_a.i: src/push_a.c.i
+
+.PHONY : src/push_a.i
+
+# target to preprocess a source file
+src/push_a.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_a.c.i
+.PHONY : src/push_a.c.i
+
+src/push_a.s: src/push_a.c.s
+
+.PHONY : src/push_a.s
+
+# target to generate assembly for a file
+src/push_a.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_a.c.s
+.PHONY : src/push_a.c.s
 
 src/push_b.o: src/push_b.c.o
 
@@ -2715,6 +2823,33 @@ src/push_b.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_b.c.s
 .PHONY : src/push_b.c.s
 
+src/push_block.o: src/push_block.c.o
+
+.PHONY : src/push_block.o
+
+# target to build an object file
+src/push_block.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_block.c.o
+.PHONY : src/push_block.c.o
+
+src/push_block.i: src/push_block.c.i
+
+.PHONY : src/push_block.i
+
+# target to preprocess a source file
+src/push_block.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_block.c.i
+.PHONY : src/push_block.c.i
+
+src/push_block.s: src/push_block.c.s
+
+.PHONY : src/push_block.s
+
+# target to generate assembly for a file
+src/push_block.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/push_block.c.s
+.PHONY : src/push_block.c.s
+
 src/reader.o: src/reader.c.o
 
 .PHONY : src/reader.o
@@ -2741,6 +2876,33 @@ src/reader.s: src/reader.c.s
 src/reader.c.s:
 	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/reader.c.s
 .PHONY : src/reader.c.s
+
+src/return_base.o: src/return_base.c.o
+
+.PHONY : src/return_base.o
+
+# target to build an object file
+src/return_base.c.o:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/return_base.c.o
+.PHONY : src/return_base.c.o
+
+src/return_base.i: src/return_base.c.i
+
+.PHONY : src/return_base.i
+
+# target to preprocess a source file
+src/return_base.c.i:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/return_base.c.i
+.PHONY : src/return_base.c.i
+
+src/return_base.s: src/return_base.c.s
+
+.PHONY : src/return_base.s
+
+# target to generate assembly for a file
+src/return_base.c.s:
+	$(MAKE) -f CMakeFiles/push_swap.dir/build.make CMakeFiles/push_swap.dir/src/return_base.c.s
+.PHONY : src/return_base.c.s
 
 src/sort.o: src/sort.c.o
 
@@ -3048,9 +3210,15 @@ help:
 	@echo "... src/checker/main.o"
 	@echo "... src/checker/main.i"
 	@echo "... src/checker/main.s"
+	@echo "... src/clean_a.o"
+	@echo "... src/clean_a.i"
+	@echo "... src/clean_a.s"
 	@echo "... src/convert_operations.o"
 	@echo "... src/convert_operations.i"
 	@echo "... src/convert_operations.s"
+	@echo "... src/handle_block.o"
+	@echo "... src/handle_block.i"
+	@echo "... src/handle_block.s"
 	@echo "... src/is_valid.o"
 	@echo "... src/is_valid.i"
 	@echo "... src/is_valid.s"
@@ -3060,15 +3228,27 @@ help:
 	@echo "... src/operations.o"
 	@echo "... src/operations.i"
 	@echo "... src/operations.s"
+	@echo "... src/print_operations.o"
+	@echo "... src/print_operations.i"
+	@echo "... src/print_operations.s"
 	@echo "... src/process_struct.o"
 	@echo "... src/process_struct.i"
 	@echo "... src/process_struct.s"
+	@echo "... src/push_a.o"
+	@echo "... src/push_a.i"
+	@echo "... src/push_a.s"
 	@echo "... src/push_b.o"
 	@echo "... src/push_b.i"
 	@echo "... src/push_b.s"
+	@echo "... src/push_block.o"
+	@echo "... src/push_block.i"
+	@echo "... src/push_block.s"
 	@echo "... src/reader.o"
 	@echo "... src/reader.i"
 	@echo "... src/reader.s"
+	@echo "... src/return_base.o"
+	@echo "... src/return_base.i"
+	@echo "... src/return_base.s"
 	@echo "... src/sort.o"
 	@echo "... src/sort.i"
 	@echo "... src/sort.s"

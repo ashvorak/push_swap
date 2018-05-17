@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   sort.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/17 16:05:20 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/17 20:06:49 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/push_swap.h"
 
-void	sort_3elem(t_stack **stack, char ***operations)
+void		sort_3elem(t_stack **stack, char ***operations)
 {
 	if ((*stack) && (*stack)->next)
 	{
@@ -22,7 +34,6 @@ void	sort_3elem(t_stack **stack, char ***operations)
 			(*stack)->next->next->value)
 			{
 				reverse_rotate(&*stack, operations, "rra");
-				(*stack) = *stack;
 				if ((*stack)->value > (*stack)->next->value)
 					swap(*stack, operations, "sa");
 			}
@@ -30,7 +41,7 @@ void	sort_3elem(t_stack **stack, char ***operations)
 	}
 }
 
-void	sort_3elem_top(t_stack **stack, char ***operations)
+void		sort_3elem_top(t_stack **stack, char ***operations)
 {
 	if ((*stack)->value > (*stack)->next->value)
 		swap(*stack, operations, "sa");
@@ -45,78 +56,19 @@ void	sort_3elem_top(t_stack **stack, char ***operations)
 	}
 }
 
-void	clean_a(t_game *game)
+static void	del_block_head(t_block **block)
 {
-	int	i;
-	int base;
-	int size;
+	t_block *tmp;
 
-	i = 0;
-	base = return_base(game->a, game->a_remain);
-	game->b_remain = 0;
-	size = game->a_remain;
-	while (i < size)
+	if (*block)
 	{
-		if (game->a->value < base)
-		{
-			push(&game->a, &game->b, &game->operations, "pb");
-			game->a_remain--;
-			game->b_remain++;
-		}
-		else
-		{
-			rotate(&game->a, &game->operations, "ra");
-			game->a_bottom++;
-		}
-		i++;
+		tmp = *block;
+		*block = (*block)->next;
+		free(tmp);
 	}
 }
 
-int is_need_push(t_stack *stack, int base, int size)
-{
-	int 	i;
-	t_stack *tmp;
-
-	i = 0;
-	tmp = stack;
-	while (i < size)
-	{
-		if (base <= tmp->value)
-			return (1);
-		tmp = tmp->next;
-		i++;
-	}
-	return (0);
-}
-
-void	push_a(t_game *game, int base, int size)
-{
-	int	i;
-
-	i = 0;
-	while (i < size)
-	{
-		if (is_need_push(game->b, base, size - i))
-		{
-			if (game->b->value >= base)
-			{
-				push(&game->b, &game->a, &game->operations, "pa");
-				game->a_remain++;
-			}
-			else
-			{
-				rotate(&game->b, &game->operations, "rb");
-				game->block->bottom++;
-			}
-			game->block->size--;
-			i++;
-		}
-		else
-			return ;
-	}
-}
-
-void 	fix_stack_a(t_game *game)
+static void	fix_stack_a(t_game *game)
 {
 	int i;
 
@@ -129,60 +81,20 @@ void 	fix_stack_a(t_game *game)
 	game->a_bottom = 0;
 }
 
-void 	fix_block(t_game *game, t_block *block)
-{
-	int 	i;
-	int		base;
-	int		len;
-	int 	size;
-	t_stack	*tmp;
-
-	i = 0;
-	while (i < block->size)
-	{
-		rotate(&game->b, &game->operations, "rb");
-		block->bottom++;
-		i++;
-	}
-	block->size = 0;
-	tmp = game->b;
-	size = stack_size(tmp);
-	while (size != block->bottom)
-	{
-		tmp = tmp->next;
-		size = stack_size(tmp);
-	}
-	base = return_base(tmp, block->bottom);
-	i = 0;
-	len = block->bottom;
-	while (i < len)
-	{
-		reverse_rotate(&game->b, &game->operations, "rrb");
-		if (game->b->value >= base)
-		{
-			push(&game->b, &game->a, &game->operations, "pa");
-			game->a_remain++;
-			block->bottom--;
-		}
-		else
-			block->size++;
-		i++;
-	}
-	block->bottom = 0;
-}
-
-void	sort(t_game *game)
+void		sort(t_game *game)
 {
 	int size;
 	int base;
 
-	sort_3elem(&game->a, &game->operations);
+	(!is_sort(game->a)) ? sort_3elem(&game->a, &game->operations) : 0;
 	while (stack_size(game->b))
 	{
 		size = game->block->size;
 		base = return_base(game->b, size);
-		(game->block->bottom) ? fix_block(game, game->block) : push_a(game, base, size);
-		(!game->block->size && !game->block->bottom) ? del_block_head(&game->block) : 0;
+		(game->block->bottom) ? \
+		handle_block(game, game->block) : push_a(game, base, size);
+		(!game->block->size && \
+		!game->block->bottom) ? del_block_head(&game->block) : 0;
 		while (game->a_remain > 3)
 		{
 			fix_stack_a(game);

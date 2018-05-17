@@ -4,6 +4,7 @@ project(push_swap)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(push_swap
+        inc/cheсker.h
         inc/push_swap.h
         lib/ft_printf/inc/ft_printf.h
         lib/ft_printf/src/active_bits.c
@@ -96,5 +97,19 @@ add_executable(push_swap
         lib/ft_tolower.c
         lib/ft_toupper.c
         lib/libft.h
+        src/checker/checker.c
+        src/checker/main.c
+        src/clean_a.c
+        src/convert_operations.c
+        src/handle_block.c
+        src/is_valid.c
         src/main.c
-        src/reader.c src/is_valid.c src/operations.c src/process_struct.c src/sort.c src/push_b.c src/checker/main.c inc/cheсker.h src/checker/checker.c src/convert_operations.c)
+        src/operations.c
+        src/print_operations.c
+        src/process_struct.c
+        src/push_a.c
+        src/push_b.c
+        src/push_block.c
+        src/reader.c
+        src/return_base.c
+        src/sort.c)

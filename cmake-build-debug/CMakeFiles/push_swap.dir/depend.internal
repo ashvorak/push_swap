@@ -286,12 +286,24 @@ CMakeFiles/push_swap.dir/src/checker/main.c.o
  /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
  /Users/oshvorak/push_swap/lib/libft.h
  /Users/oshvorak/push_swap/src/checker/main.c
+CMakeFiles/push_swap.dir/src/clean_a.c.o
+ /Users/oshvorak/push_swap/inc/push_swap.h
+ /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/push_swap/lib/libft.h
+ /Users/oshvorak/push_swap/src/clean_a.c
 CMakeFiles/push_swap.dir/src/convert_operations.c.o
  /Users/oshvorak/push_swap/inc/push_swap.h
  /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
  /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
  /Users/oshvorak/push_swap/lib/libft.h
  /Users/oshvorak/push_swap/src/convert_operations.c
+CMakeFiles/push_swap.dir/src/handle_block.c.o
+ /Users/oshvorak/push_swap/inc/push_swap.h
+ /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/push_swap/lib/libft.h
+ /Users/oshvorak/push_swap/src/handle_block.c
 CMakeFiles/push_swap.dir/src/is_valid.c.o
  /Users/oshvorak/push_swap/inc/push_swap.h
  /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
@@ -310,24 +322,48 @@ CMakeFiles/push_swap.dir/src/operations.c.o
  /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
  /Users/oshvorak/push_swap/lib/libft.h
  /Users/oshvorak/push_swap/src/operations.c
+CMakeFiles/push_swap.dir/src/print_operations.c.o
+ /Users/oshvorak/push_swap/inc/push_swap.h
+ /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/push_swap/lib/libft.h
+ /Users/oshvorak/push_swap/src/print_operations.c
 CMakeFiles/push_swap.dir/src/process_struct.c.o
  /Users/oshvorak/push_swap/inc/push_swap.h
  /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
  /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
  /Users/oshvorak/push_swap/lib/libft.h
  /Users/oshvorak/push_swap/src/process_struct.c
+CMakeFiles/push_swap.dir/src/push_a.c.o
+ /Users/oshvorak/push_swap/inc/push_swap.h
+ /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/push_swap/lib/libft.h
+ /Users/oshvorak/push_swap/src/push_a.c
 CMakeFiles/push_swap.dir/src/push_b.c.o
  /Users/oshvorak/push_swap/inc/push_swap.h
  /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
  /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
  /Users/oshvorak/push_swap/lib/libft.h
  /Users/oshvorak/push_swap/src/push_b.c
+CMakeFiles/push_swap.dir/src/push_block.c.o
+ /Users/oshvorak/push_swap/inc/push_swap.h
+ /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/push_swap/lib/libft.h
+ /Users/oshvorak/push_swap/src/push_block.c
 CMakeFiles/push_swap.dir/src/reader.c.o
  /Users/oshvorak/push_swap/inc/push_swap.h
  /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
  /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
  /Users/oshvorak/push_swap/lib/libft.h
  /Users/oshvorak/push_swap/src/reader.c
+CMakeFiles/push_swap.dir/src/return_base.c.o
+ /Users/oshvorak/push_swap/inc/push_swap.h
+ /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h
+ /Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h
+ /Users/oshvorak/push_swap/lib/libft.h
+ /Users/oshvorak/push_swap/src/return_base.c
 CMakeFiles/push_swap.dir/src/sort.c.o
  /Users/oshvorak/push_swap/inc/push_swap.h
  /Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h

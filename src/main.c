@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 13:45:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/16 18:45:49 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/17 19:36:08 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,20 +28,7 @@ static t_game	*create_game(void)
 	return (game);
 }
 
-void print_stack(t_stack *stack)
-{
-	t_stack *tmp;
-
-	tmp = stack;
-	while (tmp)
-	{
-		ft_printf("%d ", tmp->value);
-		tmp = tmp->next;
-	}
-	ft_printf("\n");
-}
-
-int main(int ac, char **av)
+int				main(int ac, char **av)
 {
 	t_game	*game;
 
@@ -53,12 +40,13 @@ int main(int ac, char **av)
 			return (0);
 		push_b(game);
 		sort(game);
-		//ft_printf("stack a : ");
-		//print_stack(game->a);
-		//ft_printf("stack b : ");
-		//print_stack(game->b);
 		game->operations = convert_operations(game->operations);
 		print_operations(game->operations);
+		while (game->a)
+			del_stack_head(&game->a);
+		ft_free_arr(game->operations);
+		free(game);
+		game = NULL;
 	}
 	else
 		ft_error();

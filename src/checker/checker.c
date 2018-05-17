@@ -1,4 +1,34 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   checker.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/17 15:18:04 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/17 20:09:47 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../../inc/cheсker.h"
+
+static void	ss(t_stack *a, t_stack *b)
+{
+	swap(a, NULL, NULL);
+	swap(b, NULL, NULL);
+}
+
+static void	rr(t_stack **a, t_stack **b)
+{
+	rotate(a, NULL, NULL);
+	rotate(b, NULL, NULL);
+}
+
+static void	rrr(t_stack **a, t_stack **b)
+{
+	reverse_rotate(a, NULL, NULL);
+	reverse_rotate(b, NULL, NULL);
+}
 
 static void	apply_operation(char *s, t_stack **a, t_stack **b)
 {
@@ -7,30 +37,21 @@ static void	apply_operation(char *s, t_stack **a, t_stack **b)
 	else if (!ft_strcmp(s, "sa") || !ft_strcmp(s, "sb"))
 		!ft_strcmp(s, "sa") ? swap(*a, NULL, NULL) : swap(*b, NULL, NULL);
 	else if (!ft_strcmp(s, "ss"))
-	{
-		swap(*a, NULL, NULL);
-		swap(*b, NULL, NULL);
-	}
+		ss(*a, *b);
 	else if (!ft_strcmp(s, "ra") || !ft_strcmp(s, "rb"))
 		!ft_strcmp(s, "ra") ? rotate(a, NULL, NULL) : rotate(b, NULL, NULL);
 	else if (!ft_strcmp(s, "rr"))
-	{
-		rotate(a, NULL, NULL);
-		rotate(b, NULL, NULL);
-	}
+		rr(a, b);
 	else if (!ft_strcmp(s, "rra") || !ft_strcmp(s, "rrb"))
 		!ft_strcmp(s, "rra") ? \
 		reverse_rotate(a, NULL, NULL) : reverse_rotate(b, NULL, NULL);
 	else if (!ft_strcmp(s, "rrr"))
-	{
-		reverse_rotate(a, NULL, NULL);
-		reverse_rotate(b, NULL, NULL);
-	}
+		rrr(a, b);
 	else
 		ft_error();
 }
 
-int	checker(t_stack *a, char **operations)
+int			checker(t_stack *a, char **operations)
 {
 	int		i;
 	t_stack *b;
@@ -41,12 +62,13 @@ int	checker(t_stack *a, char **operations)
 	{
 		while (operations[i])
 		{
-			apply_operation(operations[i], &a , &b);
+			apply_operation(operations[i], &a, &b);
 			i++;
 		}
 	}
 	if (!is_sort(a))
 		return (0);
+	while (a)
+		del_stack_head(&a);
 	return (1);
 }
-

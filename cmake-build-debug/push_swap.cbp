@@ -365,7 +365,13 @@
 		<Unit filename="/Users/oshvorak/push_swap/src/checker/main.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/clean_a.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/convert_operations.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/handle_block.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/is_valid.c">
@@ -377,13 +383,25 @@
 		<Unit filename="/Users/oshvorak/push_swap/src/operations.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/print_operations.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/process_struct.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/push_a.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/push_b.c">
 			<Option target="push_swap"/>
 		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/push_block.c">
+			<Option target="push_swap"/>
+		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/reader.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/return_base.c">
 			<Option target="push_swap"/>
 		</Unit>
 		<Unit filename="/Users/oshvorak/push_swap/src/sort.c">

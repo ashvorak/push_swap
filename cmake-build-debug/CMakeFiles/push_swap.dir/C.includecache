@@ -382,7 +382,15 @@ string.h
 ../../inc/cheсker.h
 /Users/oshvorak/push_swap/inc/cheсker.h
 
+/Users/oshvorak/push_swap/src/clean_a.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
 /Users/oshvorak/push_swap/src/convert_operations.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
+/Users/oshvorak/push_swap/src/handle_block.c
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h
 
@@ -398,7 +406,15 @@ string.h
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h
 
+/Users/oshvorak/push_swap/src/print_operations.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
 /Users/oshvorak/push_swap/src/process_struct.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
+/Users/oshvorak/push_swap/src/push_a.c
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h
 
@@ -406,7 +422,15 @@ string.h
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h
 
+/Users/oshvorak/push_swap/src/push_block.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
 /Users/oshvorak/push_swap/src/reader.c
+../inc/push_swap.h
+/Users/oshvorak/push_swap/inc/push_swap.h
+
+/Users/oshvorak/push_swap/src/return_base.c
 ../inc/push_swap.h
 /Users/oshvorak/push_swap/inc/push_swap.h
 

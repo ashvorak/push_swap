@@ -6,12 +6,12 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 13:53:53 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/15 15:10:18 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/17 19:00:08 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUSH_SWAP
-# define PUSH_SWAP
+#ifndef PUSH_SWAP_H
+# define PUSH_SWAP_H
 
 # include <fcntl.h>
 # include <stdlib.h>
@@ -54,18 +54,18 @@ void			rotate(t_stack **stack, char ***operations, char *operation);
 void			reverse_rotate(t_stack **stack, char ***operations, char *operation);
 
 void			del_stack_head(t_stack **stack);
-void			del_block_head(t_block **block);
 
 void			sort(t_game *game);
 
+void			push_a(t_game *game, int base, int size);
 void			push_b(t_game *game);
 
 int				stack_size(t_stack *stack);
-void			sort_arr(int *arr, int size);
 int				return_base(t_stack *stack, int size);
 t_block			*new_block(int size, int bottom);
 void			push_block(t_game *game, int count, int bottom);
-int				is_need_push(t_stack *stack, int base, int size);
+void			handle_block(t_game *game, t_block *block);
+void			clean_a(t_game *game);
 
 char			**add_operation(char **operations, char *operation);
 int				is_sort(t_stack *stack);

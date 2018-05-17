@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   operations.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/17 16:04:57 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/17 18:24:51 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/push_swap.h"
 
 void	swap(t_stack *stack, char ***operations, char *operation)
@@ -14,7 +26,7 @@ void	swap(t_stack *stack, char ***operations, char *operation)
 		*operations = add_operation(*operations, operation);
 }
 
-void	push(t_stack **stack_from, t_stack **stack_to, char ***operations, char *operation)
+void	push(t_stack **stack_from, t_stack **stack_to, char ***op, char *oper)
 {
 	int		buf;
 	t_stack	*tmp;
@@ -32,8 +44,8 @@ void	push(t_stack **stack_from, t_stack **stack_to, char ***operations, char *op
 		else
 			*stack_to = new_stack(buf);
 	}
-	if (operation)
-		*operations = add_operation(*operations, operation);
+	if (oper)
+		*op = add_operation(*op, oper);
 }
 
 void	rotate(t_stack **stack, char ***operations, char *operation)

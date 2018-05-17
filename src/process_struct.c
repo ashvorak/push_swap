@@ -1,9 +1,36 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   process_struct.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/17 16:05:00 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/17 19:19:57 by oshvorak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/push_swap.h"
 
 void	ft_error(void)
 {
 	ft_putstr("Error\n");
 	exit(1);
+}
+
+int		stack_size(t_stack *stack)
+{
+	int		size;
+	t_stack	*tmp;
+
+	size = 0;
+	tmp = stack;
+	while (tmp)
+	{
+		size++;
+		tmp = tmp->next;
+	}
+	return (size);
 }
 
 void	del_stack_head(t_stack **stack)
@@ -18,19 +45,7 @@ void	del_stack_head(t_stack **stack)
 	}
 }
 
-void	del_block_head(t_block **block)
-{
-	t_block *tmp;
-
-	if (*block)
-	{
-		tmp = *block;
-		*block = (*block)->next;
-		free(tmp);
-	}
-}
-
-char  **add_operation(char **operations, char *operation)
+char	**add_operation(char **operations, char *operation)
 {
 	int		i;
 	int		size;
