@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 13:53:53 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/17 19:00:08 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/19 19:41:57 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ typedef struct	s_game
 }				t_game;
 
 void			ft_error(void);
-t_stack			*reader(int ac, char **av);
+t_stack			*reader(int ac, char **av, int i);
 t_stack			*new_stack(int value);
 int				is_valid(t_stack *stack, char *str);
 

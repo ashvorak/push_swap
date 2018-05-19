@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 14:21:54 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/09 11:58:53 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/19 19:41:48 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,14 +40,12 @@ static	void	add_stack(t_stack **stack, int value)
 	}
 }
 
-t_stack			*reader(int ac, char **av)
+t_stack			*reader(int ac, char **av, int i)
 {
-	int		i;
 	int		j;
 	char	**arr;
 	t_stack *a;
 
-	i = 1;
 	a = NULL;
 	while (i < ac)
 	{

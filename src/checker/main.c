@@ -6,13 +6,13 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 15:18:25 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/17 19:35:53 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/19 19:42:44 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/cheсker.h"
 
-void	print_stack(t_stack *stack)
+void			print_stack(t_stack *stack)
 {
 	t_stack *tmp;
 
@@ -25,25 +25,36 @@ void	print_stack(t_stack *stack)
 	ft_printf("\n");
 }
 
-int		main(int ac, char **av)
+static t_bonus	*create_bonus(void)
 {
+	t_bonus	*bonus;
+
+	if (!(bonus = (t_bonus*)malloc(sizeof(t_bonus))))
+		return (NULL);
+	bonus->num = 0;
+	bonus->steps = 0; 
+	return (bonus);
+}
+
+int				main(int ac, char **av)
+{
+	int		i;
 	t_stack *a;
+	t_bonus *bonus;
 	char	*line;
 	char	**operations;
 
 	if (ac > 1)
 	{
+		bonus = create_bonus();
 		operations = NULL;
-		a = reader(ac, av);
+		a = reader(ac, av, i);
 		while (get_next_line(0, &line) > 0)
 		{
 			operations = add_operation(operations, line);
 			ft_strdel(&line);
 		}
-		if (checker(a, operations))
-			ft_printf("OK\n");
-		else
-			ft_printf("KO\n");
+		checker(a, operations) ? ft_printf("OK\n") : ft_printf("KO\n");
 		ft_free_arr(operations);
 	}
 	else

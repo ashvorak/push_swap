@@ -1,28 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   cheсker.h                                          :+:      :+:    :+:   */
+/*   handle_flags.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/19 19:43:21 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/19 19:43:23 by oshvorak         ###   ########.fr       */
+/*   Created: 2018/05/19 18:14:12 by oshvorak          #+#    #+#             */
+/*   Updated: 2018/05/19 19:41:27 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CHEСKER_H
-# define CHEСKER_H
+#include "../../inc/checker.h"
 
-#include "push_swap.h"
-
-typedef struct	s_bonus
+static int is_flag(char *str)
 {
-	int num;
-	int steps;
-}				t_bonus;
+	return (!ft_strcmp("-s", str) || !ft_strcmp("-n", str));
+}
 
-int				checker(t_stack *a, char **operations);
-void			print_stack(t_stack *stack);
-int				handle_flags(t_bonus *bonus,char **av);
+int	handle_flags(t_bonus *bonus,char **av)
+{
+	int i;
 
-#endif
+	i = 1;
+	while (is_flag(av[i]))
+	{
+		if (!ft_strcmp("-n", str))
+			bonus->num = 1;
+		if (!ft_strcmp("-s", str))
+			bonus->steps = 1;	
+		i++;
+	}
+	return (i);
+}
