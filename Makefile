@@ -26,7 +26,8 @@ SRC1 =	./src/main.c \
 		./src/print_operations.c
 
 SRC2 =	./src/checker/main.c \
-		./src/checker/checker.c
+		./src/checker/checker.c \
+		./src/checker/handle_flags.c
 
 SRC3 = 	./src/reader.c \
 		./src/is_valid.c \

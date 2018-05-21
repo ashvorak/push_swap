@@ -35,7 +35,7 @@ int				main(int ac, char **av)
 	if (ac > 1)
 	{
 		game = create_game();
-		game->a = reader(ac, av);
+		game->a = reader(ac, av, 1);
 		if (is_sort(game->a))
 			return (0);
 		push_b(game);

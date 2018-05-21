@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/checker.h"
+#include "../../inc/cheсker.h"
 
 static int is_flag(char *str)
 {
@@ -24,9 +24,9 @@ int	handle_flags(t_bonus *bonus,char **av)
 	i = 1;
 	while (is_flag(av[i]))
 	{
-		if (!ft_strcmp("-n", str))
+		if (!ft_strcmp("-n", av[i]))
 			bonus->num = 1;
-		if (!ft_strcmp("-s", str))
+		if (!ft_strcmp("-s", av[i]))
 			bonus->steps = 1;	
 		i++;
 	}

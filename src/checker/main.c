@@ -25,6 +25,16 @@ void			print_stack(t_stack *stack)
 	ft_printf("\n");
 }
 
+void			print_steps(t_stack *a, t_stack *b)
+{
+	ft_printf("a : ");
+	print_stack(a);
+	ft_printf("\n");
+	ft_printf("b : ");
+	print_stack(b);
+	ft_printf("\n");
+}
+
 static t_bonus	*create_bonus(void)
 {
 	t_bonus	*bonus;
@@ -48,13 +58,14 @@ int				main(int ac, char **av)
 	{
 		bonus = create_bonus();
 		operations = NULL;
+		i = handle_flags(bonus, av);
 		a = reader(ac, av, i);
 		while (get_next_line(0, &line) > 0)
 		{
 			operations = add_operation(operations, line);
 			ft_strdel(&line);
 		}
-		checker(a, operations) ? ft_printf("OK\n") : ft_printf("KO\n");
+		checker(a, operations, bonus) ? ft_printf("OK\n") : ft_printf("KO\n");
 		ft_free_arr(operations);
 	}
 	else

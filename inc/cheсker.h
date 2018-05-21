@@ -21,8 +21,9 @@ typedef struct	s_bonus
 	int steps;
 }				t_bonus;
 
-int				checker(t_stack *a, char **operations);
+int				checker(t_stack *a, char **operations, t_bonus *bonus);
 void			print_stack(t_stack *stack);
 int				handle_flags(t_bonus *bonus,char **av);
+void			print_steps(t_stack *a, t_stack *b);
 
 #endif
