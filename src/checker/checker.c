@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 15:18:04 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/19 18:03:54 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/21 14:27:29 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,13 +63,17 @@ int			checker(t_stack *a, char **operations, t_bonus *bonus)
 		while (operations[i])
 		{
 			apply_operation(operations[i], &a, &b);
-			(bonus->steps) ? print_steps(a, b) : 0;
+			(bonus->steps) ? print_steps(a, b, bonus, operations[i]) : 0;
 			i++;
 		}
 	}
 	(bonus->num) ? ft_printf("\nnumber of operations = %d\n\n", i) : 0;
 	if (!is_sort(a))
+	{
+		while (a)
+			del_stack_head(&a);
 		return (0);
+	}
 	while (a)
 		del_stack_head(&a);
 	return (1);
