@@ -6,11 +6,20 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 15:18:25 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/21 15:02:00 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/21 16:45:29 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/cheсker.h"
+
+void			free_stacks(t_stack *a, t_stack *b)
+{
+	while (a || b)
+	{
+		(a) ? del_stack_head(&a) : 0;
+		(b) ? del_stack_head(&b) : 0;
+	}
+}
 
 void			print_stack(t_stack *stack, int is_color)
 {
@@ -27,8 +36,8 @@ void			print_stack(t_stack *stack, int is_color)
 
 void			print_steps(t_stack *a, t_stack *b, t_bonus *bonus, char *str)
 {
-	(bonus->color) ? ft_printf("\n{seawave}///////////////////////////\
-	///{eoc}\n") : ft_printf("\n//////////////////////////////\n");
+	(bonus->color) ? ft_printf("\n{seawave}//////////////////////////////\
+	{eoc}\n") : ft_printf("\n//////////////////////////////\n");
 	if (bonus->operation)
 		(bonus->color) ? ft_printf("{red}%s{eoc}\n", str) \
 		: ft_printf("%s\n", str);
@@ -40,8 +49,8 @@ void			print_steps(t_stack *a, t_stack *b, t_bonus *bonus, char *str)
 	print_stack(b, bonus->color);
 	(bonus->size_stack) ? \
 	ft_printf("\nsize = %d\n", stack_size(b)) : ft_printf("\n");
-	(bonus->color) ? ft_printf("{seawave}/////////////////////////////\
-	/{eoc}\n") : ft_printf("//////////////////////////////\n");
+	(bonus->color) ? ft_printf("{seawave}//////////////////////////////\
+	{eoc}\n") : ft_printf("//////////////////////////////\n");
 }
 
 static t_bonus	*create_bonus(void)
@@ -57,28 +66,6 @@ static t_bonus	*create_bonus(void)
 	bonus->size_stack = 0;
 	bonus->help = 0;
 	return (bonus);
-}
-
-static void		print_help(void)
-{
-	ft_printf("{blue}|************************************\
-*************|{eoc}\n");
-	ft_printf("{blue}|*{eoc} usage : ./push_swap -[ARGS]                 \
-	{blue} *|{eoc}\n");
-	ft_printf("{blue}|*{eoc} usage : ./cheker -[FLAGS] -[ARGS]           \
-	{blue} *|{eoc}\n");
-	ft_printf("{blue}|* {eoc} [FLAGS]: \
--n : number of operations{blue}           *|{eoc}\n");
-	ft_printf("{blue}|* {eoc}       :  \
--s : print stacks step by step{blue}      *|{eoc}\n");
-	ft_printf("{blue}|* {eoc}       : \
--ss : print stack size(only with -s) {blue}*|{eoc}\n");
-	ft_printf("{blue}|* {eoc}       :  \
--o : print every operation{blue}          *|{eoc}\n");
-	ft_printf("{blue}|* {eoc}       :  \
--c : make color                     {blue}*|{eoc}\n");
-	ft_printf("{blue}|*******************\
-******************************|{eoc}\n");
 }
 
 int				main(int ac, char **av)
@@ -97,6 +84,7 @@ int				main(int ac, char **av)
 	(bonus->help) ? print_help() : 0;
 	while (get_next_line(0, &line) > 0)
 	{
+		!check_valid(line) ? ft_error() : 0;
 		operations = add_operation(operations, line);
 		ft_strdel(&line);
 	}

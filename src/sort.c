@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 16:05:20 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/17 20:06:49 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/07/23 12:08:51 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ void		sort(t_game *game)
 	{
 		size = game->block->size;
 		base = return_base(game->b, size);
-		(game->block->bottom) ? \
+		    (game->block->bottom) ? \
 		handle_block(game, game->block) : push_a(game, base, size);
 		(!game->block->size && \
 		!game->block->bottom) ? del_block_head(&game->block) : 0;

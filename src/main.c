@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 13:45:03 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/17 19:36:08 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/21 16:45:42 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,12 @@ int				main(int ac, char **av)
 		game = create_game();
 		game->a = reader(ac, av, 1);
 		if (is_sort(game->a))
+		{
+			while (game->a)
+				del_stack_head(&game->a);
+			free(game);
 			return (0);
+		}
 		push_b(game);
 		sort(game);
 		game->operations = convert_operations(game->operations);
@@ -48,7 +53,5 @@ int				main(int ac, char **av)
 		free(game);
 		game = NULL;
 	}
-	else
-		ft_error();
 	return (0);
 }

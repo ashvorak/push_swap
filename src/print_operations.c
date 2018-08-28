@@ -6,7 +6,7 @@
 /*   By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 19:28:22 by oshvorak          #+#    #+#             */
-/*   Updated: 2018/05/17 20:01:06 by oshvorak         ###   ########.fr       */
+/*   Updated: 2018/05/21 15:45:47 by oshvorak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ void		print_operations(char **operations)
 	while (operations[i])
 	{
 		if (operations[i] && operations[i + 1])
-			print_operation(operations[i], operations[i + 1]);
+			i += print_operation(operations[i], operations[i + 1]);
 		else
 			ft_printf("%s\n", operations[i]);
 		i++;

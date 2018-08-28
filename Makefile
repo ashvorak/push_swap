@@ -6,7 +6,7 @@
 #    By: oshvorak <oshvorak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/03/23 11:59:18 by oshvorak          #+#    #+#              #
-#    Updated: 2018/05/17 19:59:50 by oshvorak         ###   ########.fr        #
+#    Updated: 2018/05/21 16:25:08 by oshvorak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,9 @@ SRC1 =	./src/main.c \
 
 SRC2 =	./src/checker/main.c \
 		./src/checker/checker.c \
-		./src/checker/handle_flags.c
+		./src/checker/handle_flags.c \
+		./src/checker/print_help.c \
+		./src/checker/check_valid.c
 
 SRC3 = 	./src/reader.c \
 		./src/is_valid.c \

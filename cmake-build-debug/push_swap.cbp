@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="push_swap"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/oshvorak/push_swap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/oshvorak/push_swap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/oshvorak/push_swap/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="push_swap">
+				<Option output="/Users/oshvorak/push_swap/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/oshvorak/push_swap/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="push_swap/fast">
+				<Option output="/Users/oshvorak/push_swap/cmake-build-debug/push_swap" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/oshvorak/push_swap/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 push_swap/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/oshvorak/push_swap/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/oshvorak/push_swap/inc/cheсker.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/inc/push_swap.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_array_size.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_atoi.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_atoi_base.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_bzero.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_charreplace.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_factorial.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_free_arr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_free_arr_int.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_isalnum.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_isalpha.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_isascii.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_isdigit.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_isprint.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_itoa.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_listsize.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_lstadd.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_lstdel.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_lstdelone.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_lstiter.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_lstmap.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_lstnew.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_memalloc.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_memccpy.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_memchr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_memcmp.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_memcpy.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_memdel.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_memmove.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_memset.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/inc/ft_printf.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/active_bits.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/convert_base.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/convert_float.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/convert_int.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/ft_printf.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/ft_putwchar.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/ft_realloc.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/handle_char.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/handle_float.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/handle_n.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/handle_num.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/handle_qualifier.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/handle_str.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/handle_value.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/handle_wchar.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/handle_wstr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/is_type.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/make_colors.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_printf/src/size_char.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_putchar.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_putchar_fd.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_putendl.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_putendl_fd.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_putnbr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_putnbr_fd.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_putstr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_putstr_fd.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_sqrt.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strcapitalize.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strcat.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strchr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strclr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strcmp.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strcpy.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strdel.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strdup.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strequ.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_striter.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_striteri.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strjoin.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strlcat.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strlen.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strmap.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strmapi.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strncat.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strncmp.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strncpy.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strnequ.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strnew.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strnstr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strrchr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strsplit.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strstr.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strsub.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_strtrim.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_swap.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_tolower.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/ft_toupper.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/get_next_line/get_next_line.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/get_next_line/get_next_line.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/lib/libft.h">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/checker/checker.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/checker/main.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/clean_a.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/convert_operations.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/handle_block.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/is_valid.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/main.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/operations.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/print_operations.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/process_struct.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/push_a.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/push_b.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/push_block.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/reader.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/return_base.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/src/sort.c">
+			<Option target="push_swap"/>
+		</Unit>
+		<Unit filename="/Users/oshvorak/push_swap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
